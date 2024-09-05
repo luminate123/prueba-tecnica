@@ -215,7 +215,12 @@ export default function Home() {
                               <div className="self-stretch justify-start items-start flex">
                                 <div className="self-stretch bg-white flex-col justify-start items-start inline-flex">
                                   <div className="self-stretch h-8 py-px flex-col justify-start items-end flex">
-                                    <div className="text-right text-[#000f49] text-xl font-semibold ">S/ 1,000.00</div>
+                                    <input
+                                      type="text"
+                                      className="text-right text-[#000f49] text-xl font-semibold border-none focus:outline-none"
+                                      defaultValue="S/ 1,000.00"
+                                      style={{ border: 'none' }}
+                                    />
                                   </div>
                                 </div>
                               </div>
@@ -271,9 +276,16 @@ export default function Home() {
                           <div className="self-stretch pt-5 justify-end items-start inline-flex">
                             <div className="self-stretch justify-start items-start flex">
                               <div className="self-stretch justify-start items-start flex">
-                                <div className="self-stretch bg-white flex-col justify-start items-start inline-flex">
+                                <div className="self-stretchflex-col justify-start items-start inline-flex">
                                   <div className="self-stretch h-8 pl-[206.21px] py-px flex-col justify-start items-start flex">
-                                    <div className="text-right text-[#000f49] text-xl font-semibold ">$262.40</div>
+                                    <div className="text-right text-[#000f49] text-xl font-semibold">
+                                      <input
+                                        type="text"
+                                        className="text-right text-[#000f49] text-xl font-semibold border-none focus:outline-none"
+                                        defaultValue="$ 262.40"
+                                        style={{ border: 'none' }}
+                                      />
+                                    </div>
                                   </div>
                                 </div>
                               </div>
