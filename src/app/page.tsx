@@ -186,11 +186,11 @@ export default function Home() {
                         <div className="text-[#000f49] text-sm font-semibold  leading-[21px]">S/ 30.83</div>
                       </div>
                     </div>
-                    <div className="w-[388px] h-14 pl-[130.05px] pr-[130.04px] py-[16.50px] left-0 top-[252px] absolute bg-[#0024b3] rounded-xl justify-center items-center inline-flex">
+                    <button className="w-[388px] h-14 pl-[130.05px] pr-[130.04px] py-[16.50px] left-0 top-[252px] absolute bg-[#0024b3] rounded-xl justify-center items-center inline-flex">
                       <div className="py-px flex-col justify-start items-center inline-flex">
-                        <div className="text-center text-white text-[15px] font-bold ">Ingresar a Rextie</div>
+                        <div className="text-center text-white text-[15px] font-black ">Regístrate</div>
                       </div>
-                    </div>
+                    </button>
                     <div className="h-[152px] left-0 top-0 absolute flex-col justify-start items-start gap-2 inline-flex">
                       <div className="self-stretch h-[72px] pl-[15px] pr-[15.02px] py-[11px] bg-white rounded-xl border border-[#000097]/60 justify-center items-center inline-flex">
                         <div className="w-[71.59px] flex-col justify-start items-start inline-flex">
