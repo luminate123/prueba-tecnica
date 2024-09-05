@@ -844,10 +844,6 @@ export default function Home() {
             </div>
           </div>
         </footer>
-        <button className="fixed bottom-4 right-4 rounded-full p-2">
-          <ArrowUp size={24} />
-          <span className="sr-only">Volver arriba</span>
-        </button>
       </div>
     </div >
   );
