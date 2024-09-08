@@ -31,28 +31,38 @@ export default function Home() {
         <div className='relative grid justify-items-center'>
           {/* Header */}
           <header className="font-size-14 z-[100] h-82 w-full left-0 top-0 md:top-10 ng-star-inserted">
-            <div className="max-w-7xl max-[1919px]:max-w-[75rem] mx-auto px-2.5 py-1.5 flex gap-[30px] list-none ng-star-inserted">
-              <nav className="hidden md:flex space-x-4 font-bold">
-                <a href="#" className="border-b-2 border-red-500 pb-1">Personas</a>
-                <a href="#" className='font-normal'>Empresas</a>
-              </nav>
+            <div className="w-full left-0 top-0 h-10 hidden min-[1025px]:block ng-star-inserted">
+              <ul className="max-w-7xl max-[1919px]:max-w-[75rem] mx-auto px-2.5 py-1.5 flex gap-[30px] list-none ng-star-inserted">
+                <li>
+                  <a href="#" className="border-b-[3px] border-[#ff6e00] font-bold pb-0.4">Personas</a>
+                </li>
+                <li>
+                  <a href="#" className="">Empresas</a>
+                </li>
+              </ul>
             </div>
             <nav className="max-w-7xl max-[1919px]:max-w-[75rem] mx-auto flex items-center justify-between h-[82px] px-2.5 ng-star-inserted">
               <img src="/rextie-icon-redesign.svg" alt="Rextie Logo" className="object-cover object-left-top hidden min-[480px]:block ng-star-inserted" />
-              <div className='flex items-center'>
-                <div className='line-menu gap-5 flex-wrap pl-5 justify-end hidden min-[1025px]:flex ng-star-inserted text-sm'>
-                  <a href="#" className="hidden md:inline">Nosotros</a>
-                  <a href="#" className="hidden md:inline">Blog</a>
-                  <div className="relative group">
-                    <button className="flex items-center">
-                      Servicios
-                      <ChevronDownIcon className="h-5 w-5 ml-1 text-orange-500" />
-                    </button>
-                  </div>
+              <ul className='line-menu grow-[3] flex-wrap pl-5 justify-end hidden min-[1025px]:flex ng-star-inserted'>
+                <li className='flex items-center'>
+                  <a href="#" className="text-white text-sm rounded-md h-6 mx-[.75rem] flex items-center relative">Nosotros</a>
+                </li>
+                <li className='flex items-center'>
+                  <a href="#" className="text-white text-sm rounded-md h-6 mx-[.75rem] flex items-center relative">Blog</a>
+                </li>
+                <li className='mx-[.75rem] relative inline-block group'>
+                  <button className="flex items-center w-full h-6 text-white text-sm gap-2 border-none cursor-pointer p-0">
+                    Servicios
+                    <svg _ngcontent-jdx-c63="" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none"><path _ngcontent-jdx-c63="" d="M1.25 1.12506L5 4.87506L8.75 1.12506" stroke="#FF6E00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  </button>
+                </li>
+              </ul>
+              <span className='w-10 items-center justify-center text-[#707E9B] hidden min-[1025px]:flex ng-star-inserted'>|</span>
+              <div className='flex items-center max-[599px]:grow ng-star-inserted'>
+                <div className='flex-grow flex  items-center justify-end'>
+                  <button className="text-[#FFFFFF] min-[480px]:text-white min-w-28 h-10 px-[.75rem] rounded-xl hover:bg-gray-hover-effect text-sm font-bold mr-5 ng-star-inserted">Iniciar sesión</button>
+                  <button _ngcontent-kpj-c63="" className="text-primary-white bg-[#0024B3] min-w-28 h-10 px-[.75rem] rounded-xl text-sm font-bold ng-star-inserted"> Regístrate </button>
                 </div>
-                <span className='w-10 items-center justify-center text-white hidden min-[1025px]:flex ng-star-inserted'>|</span>
-                <a href="#" className="text-[#ffffff] px-4 py-2 rounded-full text-sm font-medium">Iniciar sesión</a>
-                <a href="#" className="bg-[#0024B3] px-4 py-2 rounded-xl text-sm font-medium">Regístrate</a>
               </div>
               {/* Sidebar */}
               <div className="block lg:hidden">
