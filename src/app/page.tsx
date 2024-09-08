@@ -24,7 +24,7 @@ export default function Home() {
     "/ASEP.png",
   ]
   return (
-    <div className='font-poppins'>
+    <div className='font-poppins text-shadow'>
       <div className="text-white min-[480px]: bg-no-repeat bg-cover bg-center h-auto min-[1281px]:h-[682px] image-container" style={{
         backgroundImage: "url('/banner-person.webp')",
       }}>
@@ -639,13 +639,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto max-w-[1110px] px-6 justify-center py-[60px]">
+      <section className="container mx-auto max-w-[1110px]  justify-center py-[60px]">
         <div className='grid'>
           <h2 className="text-[34px] font-bold text-center text-[#0032FF]  my-[22px]">
             Descubre lo que dicen nuestros clientes
           </h2>
 
-          <p className="text-center text-[14px] font-normal text-gray-600 my-[17px]">
+          <p className="text-center text-[14px] font-normal text-[#3e4045] my-[17px]">
             Conoce de primera mano lo que es cambiar dinero con Rextie.
           </p>
         </div>
@@ -654,41 +654,41 @@ export default function Home() {
         <div className='flip-card-people-think-rextie'>
           <div className="flip-card-people-think-rextie__container-cards">
             <div className="bg-[#eff2ff] rounded-lg border-[1px] border-[#707e9b] flip-card-ng-star-inserted ">
-              <div className="grid h-full content-between mx-9">
+              <div className="grid h-full content-between mx-[40px]">
                 <h3></h3>
-                <p className="text-gray-800 mb-4 text-center text-base ">
+                <p className="text-gray-800 mb-4 text-center text-[16px] ">
                   "Mi experiencia al usar la aplicación fue estupenda. Es sencilla, transparente en las tasas de cambio, y me permitió ahorrar tiempo. Es la mejor app que he usado".
                 </p>
-                <p className="font-extrabold text-center text-gray-600 mb-4">Chanel Ramos</p>
+                <p className="font-extrabold text-center text-[#3e4045] mb-4">Chanel Ramos</p>
               </div>
             </div>
             <div className="bg-[#eff2ff] rounded-lg border-[1px] border-[#707e9b] flip-card-ng-star-inserted">
-              <div className="grid h-full content-between mx-9">
+              <div className="grid h-full content-between mx-[40px]">
                 <h3></h3>
-                <p className="text-gray-800 mb-4 text-center">
+                <p className="text-gray-800 mb-4 text-center text-[16px]">
                   "La mejor casa de cambio online, siempre se preocupan porque sea un servicio bueno y honesto. Me llaman incluso cuando pasó algún error y lo solucionan rápido".
                 </p>
-                <p className="font-extrabold text-center text-gray-600 mb-4">Grecia Retamozo</p>
+                <p className="font-extrabold text-center text-[#3e4045] mb-4">Grecia Retamozo</p>
               </div>
 
             </div>
             <div className="bg-[#eff2ff] rounded-lg border-[1px] border-[#707e9b] flip-card-ng-star-inserted">
-              <div className="grid h-full content-between px-8">
+              <div className="grid h-full content-between mx-[40px]">
                 <h3></h3>
-                <p className="text-gray-800 mb-4 text-center">
+                <p className="text-gray-800 mb-4 text-center text-[16px]">
                   "Hasta el momento estoy muy contento con el servicio brindado por Rextie. Nunca tuve problemas con la app, es de mucha ayuda. La recomiendo".
                 </p>
-                <p className="font-extrabold text-gray-600 text-center mb-4">Jorge Suarez</p>
+                <p className="font-extrabold text-[#3e4045] text-center mb-4">Jorge Suarez</p>
               </div>
 
             </div>
             <div className="bg-[#eff2ff] rounded-lg border-[1px] border-[#707e9b] flip-card-ng-star-inserted">
-              <div className="grid h-full content-between px-8">
+              <div className="grid h-full content-between mx-[40px]">
                 <h3></h3>
-                <p className="text-gray-800 mb-4 text-center">
+                <p className="text-gray-800 mb-4 text-center text-[16px] text-shadow">
                   "Rextie tiene una muy buena app, sencilla de usar y con muy buenos precios de venta y compra del dólar. Es la mejor casa de cambio online".
                 </p>
-                <p className="font-extrabold text-gray-600 text-center mb-4 ">Reni Ravina</p>
+                <p className="font-extrabold text-[#3e4045] text-center mb-4 ">Reni Ravina</p>
               </div>
 
             </div>
@@ -699,8 +699,8 @@ export default function Home() {
 
       {/* 6ta seccion */}
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center text-[#0032FF] mb-4">Rextie en los medios</h1>
-        <p className="text-center text-gray-600 mb-8">
+        <h1 className="text-[34px] font-bold text-center text-[#0032FF] mb-4">Rextie en los medios</h1>
+        <p className="text-center text-[#3e4045] py-[17px] text-[14px] ">
           Encuentra artículos y noticias en medios que hablan de nuestra casa de cambio online.
         </p>
         <div className="flex flex-col md:flex-row ">
@@ -720,33 +720,41 @@ export default function Home() {
           </div>
           <div className="md:w-1/2">
             <div className="flex pr-44">
-              <div>
-                <button className='bg-[#eff2ff] p-[15px] rounded-full'>
-                  <ArrowLeft className="h-6 w-6 text-[#0032FF] " />
+              <div className='py-[15px]'>
+                <button className='bg-[#eff2ff] rounded-[50%] h-[48px] px-[15px] flex items-center justify-center'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" >
+                    <path fill-rule="evenodd" d="M8.707 1.707A1 1 0 1 0 7.293.293l-7 7a1 1 0 0 0 0 1.414l7 7a1 1 0 0 0 1.414-1.414L3.414 9H15a1 1 0 1 0 0-2H3.414l5.293-5.293z" fill="#0032ff"></path>
+                  </svg>
                 </button>
               </div>
 
               <div className='grid'>
-                <div className="flex  mb-4">
-                  <div className="flex gap-6">
-                    <Image src="/semana-economica.png" alt="Semana económica" width={136.66} height={27.33} />
-                    <Image src="/la-republica.png" alt="La República" width={136.66} height={22.78} />
-                    <Image src="/peru-21.png" alt="Perú 21" width={136.66} height={27.33} />
+                <div className="flex  py-[15px]">
+                  <div className="flex gap-7">
+                    <img src="/semana-economica.png" alt="Semana económica" className='w-[136.667px]' />
+                    <img src="/la-republica.png" alt="La República" className='w-[136.667px] h-[23px]' />
+                    <img src="/peru-21.png" alt="Perú 21" className='w-[136.667px]' />
                   </div>
 
                 </div>
-                <p className="text-gray-600 mb-0 pl-6">
-                  "Rextie se convierte en la primera fintech de América Latina en recibir una inversión directa de uno de
-                  los bancos más grandes del mundo. Con la operación, sus clientes se beneficiarán de la integración de
-                  soluciones como CitiFX Pulse e Instant Payments".
-                </p>
-                <button className="text-[#0032FF] font-extrabold flex justify-start  pl-6">
-                  Ver noticia
-                </button>
+                <div className='grid mb-0 pl-2 pr-5'>
+                  <p className="text-[#3e4045] text-[14px]  tracking-normal">
+                    "Rextie se convierte en la primera fintech de América Latina en recibir una inversión directa de uno de
+                    los bancos más grandes del mundo. Con la operación, sus clientes se beneficiarán de la integración de
+                    soluciones como CitiFX Pulse e Instant Payments".
+                  </p>
+                  <a className="text-[#0032FF] text-[14px] font-bold">
+                    Ver noticia
+                  </a>
+                </div>
+
               </div>
-              <div>
-                <button className='bg-[#eff2ff] p-[15px] rounded-full'  >
-                  <ArrowRight className="h-6 w-6 text-[#0032FF] " />
+              <div className='py-[15px]'>
+                <button className='bg-[#eff2ff] rounded-[50%] h-[48px] px-[15px] flex items-center justify-center'>
+                  <svg _ngcontent-luq-c44="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+                    <path _ngcontent-luq-c44="" fill-rule="evenodd" d="M7.293 1.707A1 1 0 1 1 8.707.293l7 7a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414-1.414L12.586 9H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h11.586L7.293 1.707z" fill="#0032ff">
+                    </path>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -766,10 +774,10 @@ export default function Home() {
                     <Star className="w-5 h-5 text-yellow-400 fill-current" />
                     <span className="text-lg font-bold ml-1">4.8</span>
                   </div>
-                  <p className="text-sm text-gray-600">Reseña en App Store</p>
+                  <p className="text-[8.687px] text-[#3e4045] ">Rextie y tienda de aplicaciones</p>
                 </div>
               </div>
-              <h2 className="text-2xl font-bold">¡Cambia dinero desde cualquier lugar!</h2>
+              <h2 className="text-2xl font-bold text-[#3e4045]">¡Cambia dinero desde cualquier lugar!</h2>
               <div className="flex space-x-4">
                 <img src="/app-store.png" alt="App Store" className="h-10" />
                 <img src="/google-play.png" alt="Google Play" className="h-10" />
@@ -778,7 +786,7 @@ export default function Home() {
 
             </div>
             <div className="relative w-48 h-auto">
-              <img src="/apps-rextie.png?" alt="Phone 1" className="w-full h-auto absolute -top-16 right-0" />
+              <img src="/apps-rextie.png?" alt="Phone 1" className="w-full h-auto absolute -top-[90px] right-0" />
             </div>
           </div>
         </div>
@@ -798,8 +806,8 @@ export default function Home() {
                 <div className='grid gap-[10px]'>
                   <svg _ngcontent-yer-c55="" xmlns="http://www.w3.org/2000/svg" width="90" height="30" fill="none"><g _ngcontent-yer-c55="" clip-path="url(#A)"><g _ngcontent-yer-c55="" fill="#ff6e00"><path _ngcontent-yer-c55="" d="M9.272 12.895c0 .304.034.607.103.903H2.078a15.34 15.34 0 0 1-.101-1.806h7.398a3.98 3.98 0 0 0-.103.903zm15.154-.903a14.93 14.93 0 0 1-.101 1.806h-7.298a4.02 4.02 0 0 0 0-1.806h7.399z"></path></g><g _ngcontent-yer-c55="" fill="#00c8ff"><path _ngcontent-yer-c55="" d="M11.047 9.596a3.95 3.95 0 0 0-1.325 1.469l-1.028-.994c-.922-.897-2.157-1.397-3.441-1.395H1.979V6.694h3.273c1.797-.003 3.524.697 4.814 1.952l.981.95zm12.423 7.846a17.27 17.27 0 0 1-.7 1.671l-.153.31h-1.476c-1.797.004-3.525-.696-4.815-1.951l-1.186-1.149a3.95 3.95 0 0 0 1.418-1.382l1.141 1.105a4.92 4.92 0 0 0 3.442 1.395h2.329z"></path></g><path _ngcontent-yer-c55="" fill-rule="evenodd" d="M26.4 11.773V1.224l-2.485-.39a69.18 69.18 0 0 0-21.428 0l-2.485.39v10.549c-.095 5.765 2.796 11.323 6.685 14.348 0 0 3.067 2.598 6.513 3.631 3.866-1.255 6.512-3.631 6.512-3.631 3.891-3.024 6.781-8.582 6.687-14.347zm-24.421.033V2.88l.608-.094c7.034-1.092 14.193-1.092 21.227 0l.609.095v3.814h-3.296c-1.797-.004-3.525.697-4.815 1.952l-.973.943a3.92 3.92 0 0 0-2.518-.619c-.885.085-1.715.469-2.354 1.089s-1.05 1.439-1.166 2.323.071 1.782.53 2.546L8.68 16.046c-.927.9-2.149 1.396-3.004 1.396H2.934c-.657-1.843-.986-3.762-.955-5.637zm20.792 7.307c-1.049 2.187-2.567 4.12-4.268 5.441 0 0-2.286 1.983-5.318 3.106-2.764-.999-5.287-3.106-5.287-3.106-1.619-1.259-3.069-3.072-4.112-5.13h1.455a6.88 6.88 0 0 0 4.814-1.951l1.194-1.157a3.92 3.92 0 0 0 2.439.493c.845-.105 1.633-.483 2.245-1.076s1.016-1.37 1.15-2.214-.008-1.708-.406-2.463l1.013-.982a4.92 4.92 0 0 1 3.439-1.395h3.294v3.128c.042 2.45-.529 4.976-1.652 7.307zm18.052 1.563l-3.103-5.225h-1.711v5.225h-2.555V6.737h5.17c1.506 0 2.651.415 3.459 1.264s1.203 1.867 1.203 3.093c0 1.811-.977 3.433-2.914 4.055l3.497 5.527h-3.047zM36.01 9.133v3.999h2.331c1.56 0 2.312-.886 2.312-2.018 0-1.113-.752-1.981-2.03-1.981H36.01zm14.16 9.66a5.75 5.75 0 0 0 2.764-.687l.991 1.779c-1.126.679-2.412 1.02-3.848 1.02-3.835 0-5.527-2.64-5.527-5.356 0-1.547.489-2.829 1.466-3.829.996-1.019 2.275-1.528 3.835-1.528 1.484 0 2.688.472 3.628 1.396.959.925 1.429 2.169 1.429 3.754-.002.366-.028.731-.075 1.094H47.05c.319 1.415 1.372 2.358 3.121 2.358zm2.332-4.226c-.207-1.434-1.241-2.32-2.651-2.32h0c-1.429 0-2.482.886-2.801 2.32h5.452zm12.607 6.111h-2.82l-2.087-3.471-2.145 3.471h-2.839l3.422-5.244-3.063-4.998h2.82l1.861 3.244 1.974-3.244h2.783l-3.233 5.074 3.327 5.168zM76.743 6.115c-.884 0-1.579.66-1.579 1.547 0 .905.677 1.547 1.579 1.547a1.49 1.49 0 0 0 1.541-1.547 1.5 1.5 0 0 0-1.541-1.547zm-6.674 4.32V6.814h-2.425v3.621h-1.73v2.075h1.692v4.413c0 2.622 1.186 3.999 3.497 3.999 1.147 0 2.145-.283 2.952-.849l-.771-1.923c-.583.358-1.166.528-1.73.528-.996 0-1.485-.622-1.485-1.848v-4.32h5.414v8.167h2.464V10.435h-7.878zm15.193 8.357a5.75 5.75 0 0 0 2.764-.687l.991 1.779c-1.126.679-2.412 1.02-3.848 1.02-3.835 0-5.527-2.64-5.527-5.356 0-1.547.489-2.829 1.467-3.829.996-1.019 2.275-1.528 3.835-1.528 1.484 0 2.688.472 3.628 1.396.959.925 1.429 2.169 1.429 3.754-.002.366-.028.731-.075 1.094h-7.783c.319 1.415 1.372 2.358 3.12 2.358zm2.332-4.226c-.207-1.434-1.241-2.32-2.651-2.32h0c-1.429 0-2.482.886-2.801 2.32h5.452z" fill="#000096"></path><path _ngcontent-yer-c55="" d="M13.199 15.231c1.286 0 2.329-1.046 2.329-2.336s-1.043-2.336-2.329-2.336-2.329 1.046-2.329 2.336 1.043 2.336 2.329 2.336z" fill="#ff6e00"></path></g><defs _ngcontent-yer-c55=""><clipPath _ngcontent-yer-c55="" id="A"><path _ngcontent-yer-c55="" fill="#fff" d="M0 0h90v29.752H0z"></path></clipPath></defs></svg>
                   <div className='grid gap-3'>
-                    <p className="text-xs text-gray-600">Rextie S.A.C.</p>
-                    <p className="text-xs font-extrabold text-gray-600">RUC 20610130013</p>
+                    <p className="text-xs text-[#3e4045]">Rextie S.A.C.</p>
+                    <p className="text-xs font-extrabold text-[#3e4045]">RUC 20610130013</p>
                   </div>
                 </div>
 
@@ -816,55 +824,55 @@ export default function Home() {
               <div>
                 <h3 className="font-extrabold mb-4 ">Servicios</h3>
                 <ul className="space-y-2 text-xs">
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Rextie Business</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Rextie Factoring</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Confirming</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Visa <span className="bg-orange-500 py-1 text-white text-xs px-1 rounded">nuevo</span></Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Rextie Business</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Rextie Factoring</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Confirming</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Visa <span className="bg-orange-500 py-1 text-white text-xs px-1 rounded">nuevo</span></Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-extrabold mb-4">Recursos</h3>
                 <ul className="space-y-2 text-xs">
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Blog</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Tipo de cambio</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">App para cambiar dólares</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Cambio de Dólar a Soles</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Precio del Dólar</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Dólar</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Blog</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Tipo de cambio</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">App para cambiar dólares</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Cambio de Dólar a Soles</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Precio del Dólar</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Dólar</Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-extrabold mb-4">Soporte</h3>
                 <ul className="space-y-2 text-xs">
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Preguntas frecuentes</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Cómo cambiar dólares con REXTIE</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Términos y Condiciones</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Política de Cookies</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Política de Privacidad</Link></li>
-                  <li><Link href="#" className="text-gray-600 hover:text-gray-800">Mapa del sitio</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Preguntas frecuentes</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Cómo cambiar dólares con REXTIE</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Términos y Condiciones</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Política de Cookies</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Política de Privacidad</Link></li>
+                  <li><Link href="#" className="text-[#3e4045] hover:text-gray-800">Mapa del sitio</Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-extrabold mb-4">Contacto</h3>
                 <ul className="space-y-8 text-xs">
-                  <div className="text-gray-600 hover:text-gray-800">
+                  <div className="text-[#3e4045] hover:text-gray-800">
                     <li><Link href="#" className="text-blue-600 font-extrabold hover:text-gray-800">info@rextie.com</Link></li>
                     <li >T. 01 700 3301</li>
                     <li>C. 963 896 793</li>
                   </div>
-                  <div className="text-gray-600 hover:text-gray-800">
+                  <div className="text-[#3e4045] hover:text-gray-800">
                     <li>Lunes a Viernes:</li>
                     <li>8:00 am. - 8:00 pm.</li>
                   </div>
-                  <div className="text-gray-600 hover:text-gray-800">
+                  <div className="text-[#3e4045] hover:text-gray-800">
                     <li>Lunes a Viernes:</li>
                     <li>8:00 am. - 8:00 pm.</li>
                   </div>
-                  <div className="text-gray-600 hover:text-gray-800">
+                  <div className="text-[#3e4045] hover:text-gray-800">
                     <li>Sábados:</li>
                     <li>9:00 am. - 3:00 pm.</li>
                   </div>
-                  <div className="text-gray-600 hover:text-gray-800">
+                  <div className="text-[#3e4045] hover:text-gray-800">
                     <li>Av. José Gálvez</li>
                     <li>Barrenechea 566, Of. 101,</li>
                     <li>Urb. Corpac, San Isidro, Lima.</li>
