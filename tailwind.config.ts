@@ -1,3 +1,4 @@
+import { Poppins } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -19,17 +20,17 @@ const config: Config = {
       extrabold: '800',
       black: '900',
     },
-    extend: {
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            fontFeatureSettings: '"ss02"',
-          },
+
+    fontFamily: {
+      poppins: [
+        'Poppins',
+        {
+          fontFeatureSettings: '"ss02"'
         },
-      },
+      ],
+    },
+    extend: {
+
     },
 
   },

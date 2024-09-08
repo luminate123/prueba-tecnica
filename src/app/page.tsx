@@ -24,7 +24,7 @@ export default function Home() {
     "/ASEP.png",
   ]
   return (
-    <div className='font-poppins font-feature-ss02'>
+    <div className='font-poppins'>
       <div className="text-white min-[480px]: bg-no-repeat bg-cover bg-center h-auto min-[1281px]:h-[682px] image-container" style={{
         backgroundImage: "url('/banner-person.webp')",
       }}>
@@ -320,18 +320,18 @@ export default function Home() {
       </div>
 
       {/* 2da seccion */}
-      <div className="container mx-auto px-4 py-8 mt-7">
-        <h1 className="text-3xl font-extrabold text-navy-900 text-center mb-8 text-blue-950">
+      <div className="app-bank">
+        <h1 className="font-bold text-[32px] max-[480px]:text-xl leading-[48px] text-[#000F49] text-center px-11 max-[480px]:px-6 mt-12 mb-3 min-[480px]:mb-6">
           Cambia al instante con todos los bancos en Perú
         </h1>
         <div className='grid grid-cols-1 min-[769px]:grid-cols-2 gap-3 min-[413px]:gap-6  mb-[60px] max-w-[320px] min-[413px]:max-w-[546px] min-[769px]:max-w-[960px] m-auto'>
           <div className='order-2 min-[769px]:order-1 flex flex-col items-center justify-center border border-quinary-gray border-solid rounded-3xl h-[162px] sm:h-52 p-6 min-[769px]:mt-[24.8px]'>
             <div className='flex flex-col-reverse mb-6 sm:mb-0 sm:flex-col items-center'>
-              <span className="hidden min-[480px]:block font-normal text-xs leading-4 text-stratos-950 min-[480px]:mb-6">Transferencias inmediatas </span>
-              <span className="block min-[480px]:hidden font-normal text-xs leading-4 text-stratos-950 min-[480px]:mb-6">Transferencias Inmediatas a todo el Perú. </span>
-              <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-stratos-950">15 min. </span>
-              <span className="hidden min-[480px]:block font-normal text-xs leading-4 text-stratos-950 mb-6">Todo el Perú
-                <span className="block min-[480px]:hidden font-normal text-xs leading-4 text-stratos-950 min-[480px]:mb-6">Transferencias Inmediatas a todo el Perú.
+              <span className="hidden min-[480px]:block font-normal text-xs leading-4 text-[#000F49] min-[480px]:mb-6">Transferencias inmediatas </span>
+              <span className="block min-[480px]:hidden font-normal text-xs leading-4 text-[#000F49] min-[480px]:mb-6">Transferencias Inmediatas a todo el Perú. </span>
+              <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#000F49]">15 min. </span>
+              <span className="hidden min-[480px]:block font-normal text-xs leading-4 text-[#000F49] mb-6">Todo el Perú
+                <span className="block min-[480px]:hidden font-normal text-xs leading-4 text-[#000F49] min-[480px]:mb-6">Transferencias Inmediatas a todo el Perú.
                 </span>
               </span>
               <div className="flex flex-col sm:flex-row items-center sm:justify-center sm:gap-8 sm:mb-[30px]">
@@ -353,15 +353,15 @@ export default function Home() {
               <span className="text-sixth-white text-xs max-[480px]:text-[10px] font-normal text-white">Nuevo beneficio</span>
             </div>
             <div className="flex flex-col items-center justify-center border border-quinary-gray border-solid rounded-b-3xl rounded-t-none sm:h-52 h-[278px] p-6">
-              <span className="font-normal text-xs leading-4 text-stratos-950 mb-6 max-[480px]:mb-2">Transferencias interbancarias</span>
+              <span className="font-normal text-xs leading-4 text-[#000F49] mb-6 max-[480px]:mb-2">Transferencias interbancarias</span>
               <div className="flex flex-col sm:flex-row sm:gap-6 mb-6">
                 <div className="flex flex-col items-center">
-                  <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-stratos-950">30 min.</span>
-                  <span className="font-normal text-xs leading-4 text-primary-gray">Lima </span>
+                  <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#000F49]">30 min.</span>
+                  <span className="font-normal text-xs leading-4 text-[#707E9B]">Lima </span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-stratos-950">24 horas</span>
-                  <span className="font-normal text-xs leading-4 text-primary-gray">Provincias </span>
+                  <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#000F49]">24 horas</span>
+                  <span className="font-normal text-xs leading-4 text-[#707E9B]">Provincias </span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row items-center sm:justify-center sm:gap-8 mb-6 sm:mb-0">
@@ -375,224 +375,233 @@ export default function Home() {
                 </div>
               </div>
               <button className="p-0">
-                <span className="text-secondary-blue-100 text-xs underline">Ver bancos disponibles</span>
+                <span className="text-[#0031F7] text-xs underline">Ver bancos disponibles</span>
               </button>
             </div>
           </div>
         </div>
       </div>
       {/* 3ra seccion */}
-      <div className="flex flex-col md:flex-row  p-6 pr-0 max-w-5xl mx-auto">
-        <div className="flex-col justify-end mr-14">
-          <div className="flex justify-start items-center rounded-t-lg flex-grow-0 flex-shrink-0 bg-[#0032ff]">
-            <div
-              className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-60 px-2.5 py-[15px] rounded-tl-lg"
-            >
-              <div
-                className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative pt-1.5"
-              >
-                <svg
-                  width="85"
-                  height="26"
-                  viewBox="0 0 85 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-grow-0 flex-shrink-0 w-[84.52px] h-[25px] relative"
-                  preserveAspectRatio="none"
-                >
-                  <g clip-path="url(#clip0_11_6)">
-                    <g clip-path="url(#clip1_11_6)">
-                      <g clip-path="url(#clip2_11_6)">
-                        <path
-                          d="M37.9196 17.7853H34.8769L32.1342 12.9712H30.5866V17.7853H27.9844V4.56086H32.9603C34.4019 4.56086 35.5043 4.9668 36.2661 5.77747C37.028 6.58815 37.4089 7.57858 37.4089 8.74758C37.4203 9.59109 37.1817 10.4191 36.7233 11.1272C36.2781 11.8189 35.6269 12.32 34.771 12.6307L37.9185 17.7841L37.9196 17.7853ZM32.9437 7.01313H30.5878V10.5915H32.7151C33.371 10.5915 33.8698 10.4249 34.2103 10.0904C34.5615 9.75587 34.7376 9.32136 34.7376 8.78448C34.7376 8.27141 34.5734 7.84762 34.2448 7.5143C33.9282 7.17979 33.4948 7.01313 32.9437 7.01313ZM48.8787 12.6855C48.8787 12.9831 48.8489 13.3533 48.7906 13.795H41.598C41.9492 15.1794 42.8813 15.8711 44.3943 15.8711C45.5033 15.8727 46.5852 15.5286 47.4895 14.8866L48.4739 16.6579C47.2549 17.5531 45.8598 17.9995 44.2884 17.9995C42.6123 17.9995 41.3219 17.5043 40.4195 16.5139C39.5291 15.5354 39.0827 14.3307 39.0827 12.8998C39.0827 11.4082 39.5458 10.1856 40.4719 9.23089C41.3981 8.26427 42.5992 7.78096 44.0765 7.78096C45.4717 7.78096 46.6204 8.2226 47.5228 9.10471C48.4251 9.98681 48.8763 11.1808 48.8763 12.6831L48.8787 12.6855ZM44.0777 9.8761C43.4563 9.8761 42.923 10.0606 42.4778 10.4308C42.0445 10.7892 41.7504 11.2844 41.598 11.9165H46.4693C46.3514 11.2844 46.0824 10.7892 45.6598 10.4308C45.2372 10.0606 44.7098 9.8761 44.0777 9.8761ZM56.0069 12.8819L59.0842 17.7853H56.2355L54.407 14.5818L52.4904 17.7853H49.6239L52.8071 12.8105L49.9762 8.03214H52.8071L54.4427 11.0201L56.201 8.03214H58.9973L56.0069 12.8819ZM66.9398 15.2259L67.6778 17.2115C66.8802 17.7484 65.9374 18.0174 64.847 18.0174C63.7447 18.0174 62.9126 17.6948 62.3495 17.0508C61.7864 16.3949 61.5055 15.4342 61.5055 14.17V10.1439H59.9401V8.03214H61.5233V4.57872H63.9851V8.03214H67.1505V10.1439H63.9851V14.0092C63.9851 15.1544 64.4363 15.727 65.3386 15.727C65.8315 15.727 66.366 15.5604 66.9398 15.2259ZM72.0205 5.38464C72.0205 5.82628 71.8741 6.19531 71.5812 6.49411C71.4404 6.6402 71.2707 6.75543 71.083 6.83248C70.8953 6.90953 70.6936 6.94673 70.4908 6.94171C70.2879 6.94673 70.0863 6.90953 69.8986 6.83248C69.7108 6.75543 69.5412 6.6402 69.4004 6.49411C69.1075 6.19531 68.9611 5.82628 68.9611 5.38464C68.9611 4.94299 69.1075 4.57991 69.4004 4.29302C69.5412 4.14693 69.7108 4.0317 69.8986 3.95465C70.0863 3.87759 70.2879 3.8404 70.4908 3.84542C70.6936 3.8404 70.8953 3.87759 71.083 3.95465C71.2707 4.0317 71.4404 4.14693 71.5812 4.29302C71.8741 4.57991 72.0205 4.94299 72.0205 5.38464ZM71.7217 8.03333V17.7865H69.242V8.03214L71.7217 8.03333ZM83.5831 12.6855C83.5831 12.9831 83.5533 13.3533 83.495 13.795H76.3024C76.6536 15.1794 77.5857 15.8711 79.0987 15.8711C80.2077 15.8727 81.2896 15.5286 82.1938 14.8866L83.1783 16.6579C81.9593 17.5531 80.5642 17.9995 78.9928 17.9995C77.3167 17.9995 76.0263 17.5043 75.1239 16.5139C74.2335 15.5354 73.7871 14.3307 73.7871 12.8998C73.7871 11.4082 74.2501 10.1856 75.1763 9.23089C76.1024 8.26427 77.3036 7.78096 78.7809 7.78096C80.1761 7.78096 81.3248 8.2226 82.2272 9.10471C83.1295 9.98681 83.5807 11.1808 83.5807 12.6831L83.5831 12.6855ZM78.7821 9.8761C78.1607 9.8761 77.6274 10.0606 77.1822 10.4308C76.7488 10.7892 76.4548 11.2844 76.3024 11.9165H81.1736C81.057 11.2844 80.7868 10.7892 80.3642 10.4308C79.9428 10.0606 79.4142 9.8761 78.7821 9.8761Z"
-                          fill="white"
-                        ></path>
-                        <path
-                          d="M8.25562 10.9951C8.25584 11.2407 8.28379 11.4855 8.33895 11.7248H2.41779C2.32732 10.9844 2.33565 10.2654 2.33565 10.2654H8.34014C8.28394 10.5045 8.25478 10.7494 8.25562 10.9951ZM20.5574 10.2654C20.5574 10.2654 20.5705 10.8987 20.4753 11.7248H14.5518C14.608 11.4857 14.6359 11.2408 14.6351 10.9951C14.6359 10.7494 14.608 10.5045 14.5518 10.2654H20.5586H20.5574Z"
-                          fill="#FF6E00"
-                        ></path>
-                        <path
-                          d="M9.69727 8.3309C9.24266 8.62798 8.87175 9.03659 8.61993 9.51775L7.78783 8.7154C7.03905 7.98984 6.03655 7.58533 4.99391 7.58807H2.33569V5.98695H4.99272C6.45082 5.98354 7.85264 6.54948 8.89968 7.56426L9.69489 8.33328L9.69727 8.3309ZM19.7813 14.6711C19.6168 15.1311 19.4272 15.5817 19.2135 16.021L19.0885 16.2722H17.8898C16.4317 16.2756 15.0298 15.7097 13.9828 14.6949L13.0197 13.7652C13.4923 13.4973 13.8899 13.1104 14.1721 12.6486L15.0982 13.5414C15.847 14.2669 16.8495 14.6714 17.8921 14.6687H19.7837L19.7813 14.6711Z"
-                          fill="#00C8FF"
-                        ></path>
-                        <path
-                          d="M22.1585 10.0891V1.56453L20.1431 1.24907C14.3814 0.349107 8.51384 0.349107 2.74982 1.24907L0.730862 1.56453V10.0891C0.653485 14.7473 3.001 19.2411 6.158 21.6839C6.158 21.6839 8.64717 23.7838 11.4447 24.6183C14.5802 23.6052 16.7313 21.6839 16.7313 21.6839C19.8883 19.2411 22.2358 14.7473 22.1585 10.0891ZM2.33555 10.1153V2.90256L2.82958 2.82519C8.53909 1.94293 14.3502 1.94293 20.0598 2.82519L20.5538 2.90256V5.98576H17.8801C16.422 5.98235 15.0202 6.54829 13.9731 7.56307L13.1827 8.32494C12.6656 7.98719 12.0611 7.80802 11.4435 7.80948C9.68165 7.80948 8.25433 9.23442 8.25433 10.9951C8.25433 11.5962 8.42218 12.1581 8.71265 12.639L7.77816 13.5426C7.02344 14.2699 6.033 14.6699 5.33899 14.6699H3.1129C2.57959 13.1807 2.31174 11.6307 2.33674 10.1141L2.33555 10.1153ZM19.2134 16.021C18.3598 17.7876 17.1289 19.3506 15.7492 20.4173C15.7492 20.4173 13.8946 22.0207 11.434 22.9267C9.19 22.1196 7.14248 20.4173 7.14248 20.4173C5.82944 19.3994 4.65092 17.9352 3.80453 16.2722H4.98424C6.44234 16.2756 7.84417 15.7097 8.89121 14.6949L9.86021 13.7592C10.3422 14.0364 10.8887 14.1817 11.4447 14.1806C13.2065 14.1806 14.6338 12.7557 14.6338 10.9951C14.6338 10.4582 14.5005 9.95225 14.2636 9.50703L15.0862 8.71302C15.8385 7.98686 16.8313 7.58569 17.8801 7.58569H20.5538V10.1141C20.5859 12.0938 20.1217 14.1354 19.2122 16.0198"
-                          fill="white"
-                        ></path>
-                        <path
-                          d="M13.3339 10.995C13.333 11.4962 13.1333 11.9765 12.7787 12.3307C12.4241 12.6849 11.9435 12.8839 11.4424 12.8842C10.9412 12.8839 10.4606 12.6849 10.106 12.3307C9.7514 11.9765 9.55173 11.4962 9.55078 10.995C9.55173 10.4939 9.7514 10.0135 10.106 9.65937C10.4606 9.30521 10.9412 9.10615 11.4424 9.10583C11.9435 9.10615 12.4241 9.30521 12.7787 9.65937C13.1333 10.0135 13.333 10.4939 13.3339 10.995Z"
-                          fill="#FF6E00"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_11_6">
-                      <rect width="84.52" height="25" fill="white" transform="translate(0 0.569946)"></rect>
-                    </clipPath>
-                    <clipPath id="clip1_11_6">
-                      <rect width="84.52" height="25" fill="white" transform="translate(0 0.569946)"></rect>
-                    </clipPath>
-                    <clipPath id="clip2_11_6">
-                      <rect
-                        width="84.52"
-                        height="24.9989"
-                        fill="white"
-                        transform="translate(0 0.570557)"
-                      ></rect>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-            </div>
-            <div
-              className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[0.14000000059604645px] px-2.5 pt-[9px] pb-2.5"
-            >
-              <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-white">
-                Compra:
-              </p>
-              <div
-                className="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative pb-px"
-              >
-                <p
-                  className="flex-grow-0 flex-shrink-0 text-[14.899999618530273px] font-bold text-center text-white"
-                >
-                  S/ 3,7815
-                </p>
-              </div>
-            </div>
-            <div
-              className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[0.14000000059604645px] px-2.5 pt-[9px] pb-2.5 rounded-tr-lg"
-            >
-              <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-white">
-                Venta:
-              </p>
-              <div
-                className="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative pb-px"
-              >
-                <p
-                  className="flex-grow-0 flex-shrink-0 text-[14.899999618530273px] font-bold text-center text-white"
-                >
-                  S/ 3,8125
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex justify-start items-center flex-grow-0  flex-shrink-0 bg-[#f7f8fb] border-t-0 border-r-0 border-b border-l-0 border-[#d0d6e3]"
-          >
-            <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-60 p-2.5">
-              <div
-                className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative"
-              >
-                <img src="/sunat.svg" alt="Rextie Logo" className="object-cover object-left-top hidden min-[480px]:block ng-star-inserted" />
-
-              </div>
-            </div>
-            <div
-              className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative px-[17px] pt-[13px] pb-[15px]"
-            >
-              <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-[#3e4045]">
-                S/ 3,7710
-              </p>
-            </div>
-            <div
-              className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative px-[17px] pt-[13px] pb-[15px]"
-            >
-              <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-[#3e4045]">
-                S/ 3,7810
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-start items-center flex-grow-0 rounded-b-lg flex-shrink-0 bg-[#f7f8fb]">
-            <div
-              className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-60 p-2.5 rounded-bl-lg"
-            >
-              <div className="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-[5px]">
-                <div
-                  className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 h-[30px] w-5 pt-1"
-                >
+      <div className="py-[70px] why-use-rextie ">
+        <div className='grid grid-cols-2'>
+          <div className="flex-col justify-center px-16">
+            <div className='py-3 px-1'>
+              <div className='w-full'>
+                <div className="flex justify-start items-center rounded-t-lg flex-grow-0 flex-shrink-0 bg-[#0032ff]">
                   <div
-                    className="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 h-[26px] w-5 relative overflow-hidden"
+                    className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-60 px-2.5 py-[15px] rounded-tl-lg"
                   >
-                    <svg
-                      width="20"
-                      height="27"
-                      viewBox="0 0 20 27"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="flex-grow w-5 relative"
-                      preserveAspectRatio="none"
+                    <div
+                      className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative pt-1.5"
                     >
-                      <path
-                        d="M2.3999 17.4398H16.7999M4.7999 7.83979V17.4398M14.3999 7.83979V17.4398M9.5999 7.83979V17.4398M2.3999 7.83979L9.5999 3.03979L16.7999 7.83979H2.3999Z"
-                        stroke="#3E4045"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
+                      <svg
+                        width="85"
+                        height="26"
+                        viewBox="0 0 85 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="flex-grow-0 flex-shrink-0 w-[84.52px] h-[25px] relative"
+                        preserveAspectRatio="none"
+                      >
+                        <g clip-path="url(#clip0_11_6)">
+                          <g clip-path="url(#clip1_11_6)">
+                            <g clip-path="url(#clip2_11_6)">
+                              <path
+                                d="M37.9196 17.7853H34.8769L32.1342 12.9712H30.5866V17.7853H27.9844V4.56086H32.9603C34.4019 4.56086 35.5043 4.9668 36.2661 5.77747C37.028 6.58815 37.4089 7.57858 37.4089 8.74758C37.4203 9.59109 37.1817 10.4191 36.7233 11.1272C36.2781 11.8189 35.6269 12.32 34.771 12.6307L37.9185 17.7841L37.9196 17.7853ZM32.9437 7.01313H30.5878V10.5915H32.7151C33.371 10.5915 33.8698 10.4249 34.2103 10.0904C34.5615 9.75587 34.7376 9.32136 34.7376 8.78448C34.7376 8.27141 34.5734 7.84762 34.2448 7.5143C33.9282 7.17979 33.4948 7.01313 32.9437 7.01313ZM48.8787 12.6855C48.8787 12.9831 48.8489 13.3533 48.7906 13.795H41.598C41.9492 15.1794 42.8813 15.8711 44.3943 15.8711C45.5033 15.8727 46.5852 15.5286 47.4895 14.8866L48.4739 16.6579C47.2549 17.5531 45.8598 17.9995 44.2884 17.9995C42.6123 17.9995 41.3219 17.5043 40.4195 16.5139C39.5291 15.5354 39.0827 14.3307 39.0827 12.8998C39.0827 11.4082 39.5458 10.1856 40.4719 9.23089C41.3981 8.26427 42.5992 7.78096 44.0765 7.78096C45.4717 7.78096 46.6204 8.2226 47.5228 9.10471C48.4251 9.98681 48.8763 11.1808 48.8763 12.6831L48.8787 12.6855ZM44.0777 9.8761C43.4563 9.8761 42.923 10.0606 42.4778 10.4308C42.0445 10.7892 41.7504 11.2844 41.598 11.9165H46.4693C46.3514 11.2844 46.0824 10.7892 45.6598 10.4308C45.2372 10.0606 44.7098 9.8761 44.0777 9.8761ZM56.0069 12.8819L59.0842 17.7853H56.2355L54.407 14.5818L52.4904 17.7853H49.6239L52.8071 12.8105L49.9762 8.03214H52.8071L54.4427 11.0201L56.201 8.03214H58.9973L56.0069 12.8819ZM66.9398 15.2259L67.6778 17.2115C66.8802 17.7484 65.9374 18.0174 64.847 18.0174C63.7447 18.0174 62.9126 17.6948 62.3495 17.0508C61.7864 16.3949 61.5055 15.4342 61.5055 14.17V10.1439H59.9401V8.03214H61.5233V4.57872H63.9851V8.03214H67.1505V10.1439H63.9851V14.0092C63.9851 15.1544 64.4363 15.727 65.3386 15.727C65.8315 15.727 66.366 15.5604 66.9398 15.2259ZM72.0205 5.38464C72.0205 5.82628 71.8741 6.19531 71.5812 6.49411C71.4404 6.6402 71.2707 6.75543 71.083 6.83248C70.8953 6.90953 70.6936 6.94673 70.4908 6.94171C70.2879 6.94673 70.0863 6.90953 69.8986 6.83248C69.7108 6.75543 69.5412 6.6402 69.4004 6.49411C69.1075 6.19531 68.9611 5.82628 68.9611 5.38464C68.9611 4.94299 69.1075 4.57991 69.4004 4.29302C69.5412 4.14693 69.7108 4.0317 69.8986 3.95465C70.0863 3.87759 70.2879 3.8404 70.4908 3.84542C70.6936 3.8404 70.8953 3.87759 71.083 3.95465C71.2707 4.0317 71.4404 4.14693 71.5812 4.29302C71.8741 4.57991 72.0205 4.94299 72.0205 5.38464ZM71.7217 8.03333V17.7865H69.242V8.03214L71.7217 8.03333ZM83.5831 12.6855C83.5831 12.9831 83.5533 13.3533 83.495 13.795H76.3024C76.6536 15.1794 77.5857 15.8711 79.0987 15.8711C80.2077 15.8727 81.2896 15.5286 82.1938 14.8866L83.1783 16.6579C81.9593 17.5531 80.5642 17.9995 78.9928 17.9995C77.3167 17.9995 76.0263 17.5043 75.1239 16.5139C74.2335 15.5354 73.7871 14.3307 73.7871 12.8998C73.7871 11.4082 74.2501 10.1856 75.1763 9.23089C76.1024 8.26427 77.3036 7.78096 78.7809 7.78096C80.1761 7.78096 81.3248 8.2226 82.2272 9.10471C83.1295 9.98681 83.5807 11.1808 83.5807 12.6831L83.5831 12.6855ZM78.7821 9.8761C78.1607 9.8761 77.6274 10.0606 77.1822 10.4308C76.7488 10.7892 76.4548 11.2844 76.3024 11.9165H81.1736C81.057 11.2844 80.7868 10.7892 80.3642 10.4308C79.9428 10.0606 79.4142 9.8761 78.7821 9.8761Z"
+                                fill="white"
+                              ></path>
+                              <path
+                                d="M8.25562 10.9951C8.25584 11.2407 8.28379 11.4855 8.33895 11.7248H2.41779C2.32732 10.9844 2.33565 10.2654 2.33565 10.2654H8.34014C8.28394 10.5045 8.25478 10.7494 8.25562 10.9951ZM20.5574 10.2654C20.5574 10.2654 20.5705 10.8987 20.4753 11.7248H14.5518C14.608 11.4857 14.6359 11.2408 14.6351 10.9951C14.6359 10.7494 14.608 10.5045 14.5518 10.2654H20.5586H20.5574Z"
+                                fill="#FF6E00"
+                              ></path>
+                              <path
+                                d="M9.69727 8.3309C9.24266 8.62798 8.87175 9.03659 8.61993 9.51775L7.78783 8.7154C7.03905 7.98984 6.03655 7.58533 4.99391 7.58807H2.33569V5.98695H4.99272C6.45082 5.98354 7.85264 6.54948 8.89968 7.56426L9.69489 8.33328L9.69727 8.3309ZM19.7813 14.6711C19.6168 15.1311 19.4272 15.5817 19.2135 16.021L19.0885 16.2722H17.8898C16.4317 16.2756 15.0298 15.7097 13.9828 14.6949L13.0197 13.7652C13.4923 13.4973 13.8899 13.1104 14.1721 12.6486L15.0982 13.5414C15.847 14.2669 16.8495 14.6714 17.8921 14.6687H19.7837L19.7813 14.6711Z"
+                                fill="#00C8FF"
+                              ></path>
+                              <path
+                                d="M22.1585 10.0891V1.56453L20.1431 1.24907C14.3814 0.349107 8.51384 0.349107 2.74982 1.24907L0.730862 1.56453V10.0891C0.653485 14.7473 3.001 19.2411 6.158 21.6839C6.158 21.6839 8.64717 23.7838 11.4447 24.6183C14.5802 23.6052 16.7313 21.6839 16.7313 21.6839C19.8883 19.2411 22.2358 14.7473 22.1585 10.0891ZM2.33555 10.1153V2.90256L2.82958 2.82519C8.53909 1.94293 14.3502 1.94293 20.0598 2.82519L20.5538 2.90256V5.98576H17.8801C16.422 5.98235 15.0202 6.54829 13.9731 7.56307L13.1827 8.32494C12.6656 7.98719 12.0611 7.80802 11.4435 7.80948C9.68165 7.80948 8.25433 9.23442 8.25433 10.9951C8.25433 11.5962 8.42218 12.1581 8.71265 12.639L7.77816 13.5426C7.02344 14.2699 6.033 14.6699 5.33899 14.6699H3.1129C2.57959 13.1807 2.31174 11.6307 2.33674 10.1141L2.33555 10.1153ZM19.2134 16.021C18.3598 17.7876 17.1289 19.3506 15.7492 20.4173C15.7492 20.4173 13.8946 22.0207 11.434 22.9267C9.19 22.1196 7.14248 20.4173 7.14248 20.4173C5.82944 19.3994 4.65092 17.9352 3.80453 16.2722H4.98424C6.44234 16.2756 7.84417 15.7097 8.89121 14.6949L9.86021 13.7592C10.3422 14.0364 10.8887 14.1817 11.4447 14.1806C13.2065 14.1806 14.6338 12.7557 14.6338 10.9951C14.6338 10.4582 14.5005 9.95225 14.2636 9.50703L15.0862 8.71302C15.8385 7.98686 16.8313 7.58569 17.8801 7.58569H20.5538V10.1141C20.5859 12.0938 20.1217 14.1354 19.2122 16.0198"
+                                fill="white"
+                              ></path>
+                              <path
+                                d="M13.3339 10.995C13.333 11.4962 13.1333 11.9765 12.7787 12.3307C12.4241 12.6849 11.9435 12.8839 11.4424 12.8842C10.9412 12.8839 10.4606 12.6849 10.106 12.3307C9.7514 11.9765 9.55173 11.4962 9.55078 10.995C9.55173 10.4939 9.7514 10.0135 10.106 9.65937C10.4606 9.30521 10.9412 9.10615 11.4424 9.10583C11.9435 9.10615 12.4241 9.30521 12.7787 9.65937C13.1333 10.0135 13.333 10.4939 13.3339 10.995Z"
+                                fill="#FF6E00"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_11_6">
+                            <rect width="84.52" height="25" fill="white" transform="translate(0 0.569946)"></rect>
+                          </clipPath>
+                          <clipPath id="clip1_11_6">
+                            <rect width="84.52" height="25" fill="white" transform="translate(0 0.569946)"></rect>
+                          </clipPath>
+                          <clipPath id="clip2_11_6">
+                            <rect
+                              width="84.52"
+                              height="24.9989"
+                              fill="white"
+                              transform="translate(0 0.570557)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[0.14000000059604645px] px-2.5 pt-[9px] pb-2.5"
+                  >
+                    <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-white">
+                      Compra:
+                    </p>
+                    <div
+                      className="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative pb-px"
+                    >
+                      <p
+                        className="flex-grow-0 flex-shrink-0 text-[14.899999618530273px] font-bold text-center text-white"
+                      >
+                        S/ 3,7815
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[0.14000000059604645px] px-2.5 pt-[9px] pb-2.5 rounded-tr-lg"
+                  >
+                    <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-white">
+                      Venta:
+                    </p>
+                    <div
+                      className="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative pb-px"
+                    >
+                      <p
+                        className="flex-grow-0 flex-shrink-0 text-[14.899999618530273px] font-bold text-center text-white"
+                      >
+                        S/ 3,8125
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative pb-px">
-                  <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-left text-[#3e4045]">
-                    Bancos*
-                  </p>
+                <div
+                  className="flex justify-start items-center flex-grow-0  flex-shrink-0 bg-[#f7f8fb] border-t-0 border-r-0 border-b border-l-0 border-[#d0d6e3]"
+                >
+                  <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-60 p-2.5">
+                    <div
+                      className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative"
+                    >
+                      <img src="/sunat.svg" alt="Rextie Logo" className="object-cover object-left-top hidden min-[480px]:block ng-star-inserted" />
+
+                    </div>
+                  </div>
+                  <div
+                    className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative px-[17px] pt-[13px] pb-[15px]"
+                  >
+                    <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-[#3e4045]">
+                      S/ 3,7710
+                    </p>
+                  </div>
+                  <div
+                    className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative px-[17px] pt-[13px] pb-[15px]"
+                  >
+                    <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-[#3e4045]">
+                      S/ 3,7810
+                    </p>
+                  </div>
                 </div>
+                <div className="flex justify-start items-center flex-grow-0 rounded-b-lg flex-shrink-0 bg-[#f7f8fb]">
+                  <div
+                    className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-60 p-2.5 rounded-bl-lg"
+                  >
+                    <div className="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-[5px]">
+                      <div
+                        className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 h-[30px] w-5 pt-1"
+                      >
+                        <div
+                          className="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 h-[26px] w-5 relative overflow-hidden"
+                        >
+                          <svg
+                            width="20"
+                            height="27"
+                            viewBox="0 0 20 27"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="flex-grow w-5 relative"
+                            preserveAspectRatio="none"
+                          >
+                            <path
+                              d="M2.3999 17.4398H16.7999M4.7999 7.83979V17.4398M14.3999 7.83979V17.4398M9.5999 7.83979V17.4398M2.3999 7.83979L9.5999 3.03979L16.7999 7.83979H2.3999Z"
+                              stroke="#3E4045"
+                              stroke-width="1.6"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative pb-px">
+                        <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-left text-[#3e4045]">
+                          Bancos*
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative px-[17px] pt-[15px] pb-4"
+                  >
+                    <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-[#3e4045]">
+                      s/3,7250
+                    </p>
+                  </div>
+                  <div
+                    className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative px-[15px] pt-[15px] pb-4 rounded-br-lg"
+                  >
+                    <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-[#3e4045]">
+                      S/ 3,8670
+                    </p>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-500 mt-2">*Precios referenciales</p>
               </div>
             </div>
-            <div
-              className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative px-[17px] pt-[15px] pb-4"
-            >
-              <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-[#3e4045]">
-                s/3,7250
+
+
+          </div>
+
+          <div className="flex-1 ">
+            <div className="  rounded-lg w-full">
+              <div className='flex items-center mb-2 gap-3'>
+                <span className="w-[15px] h-[15px] bg-[#00c8ff] rounded-full"></span>
+                <h2 className="text-[#0032FF] font-bold text-[18px] ">REXTIE BUSINESS</h2>
+              </div>
+              <h3 className="text-[34px] font-bold mb-4 text-[#0032FF] leading-10">Tenemos un tipo de cambio exclusivo</h3>
+              <p className="mb-4 text-[14px] mr-8">
+                Cambia tus dólares a soles de forma segura, rápida y confiable con nuestra casa de cambio online.
               </p>
-            </div>
-            <div
-              className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative px-[15px] pt-[15px] pb-4 rounded-br-lg"
-            >
-              <p className="flex-grow-0 flex-shrink-0 text-[12.399999618530273px] text-center text-[#3e4045]">
-                S/ 3,8670
-              </p>
+              <a className='bg-[#0032FF] py-2 font-normal text-[14px]  px-5 rounded-md text-white tracking-[.0892857143em]'>Conocer más</a>
             </div>
           </div>
-          <p className="text-xs text-gray-500 mt-2">*Precios referenciales</p>
         </div>
 
-        <div className="flex-1 ">
-          <div className="  rounded-lg w-full">
-            <div className='flex items-center mb-2 gap-3'>
-              <span className="w-[15px] h-[15px] bg-[#00c8ff] rounded-full"></span>
-              <h2 className="text-[#0032FF] font-black text-[18px] ">REXTIE BUSINESS</h2>
-            </div>
-            <h3 className="text-4xl font-black mb-4 text-[#0032FF]">Tenemos un tipo de cambio exclusivo</h3>
-            <p className="mb-4">
-              Cambia tus dólares a soles de forma segura, rápida y confiable con nuestra casa de cambio online.
-            </p>
-            <button className='bg-[#0032FF] py-2 px-6 rounded-md text-white'>Conocer más</button>
-          </div>
-        </div>
       </div>
 
       {/* 4ta seccion */}
       <div className="flex flex-col items-center w-full">
-        <div className="w-full bg-[#0032FF] text-white py-4  flex justify-between px-48  items-center">
+        <div className="w-full bg-[#0032FF] text-white py-4  flex justify-between px-52  items-center">
           <h2 className="text-2xl font-extrabold">Cambia tu dinero rápido y seguro</h2>
-          <button className="bg-white text-[#0032FF] px-4 py-2 rounded-md font-extrabold flex items-center">
+          <a className="bg-white text-[15px] text-[#0032FF] tracking-[.0892857143em] px-4 py-2 rounded-md font-extrabold flex items-center">
             Cambia aquí
-          </button>
+          </a>
         </div>
-        <div className="max-w-6xl mx-auto px-4 py-12">
+        <div className="max-w-[1100px] mx-auto py-11">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="pr-8 md:w-1/2">
-              <h3 className="text-[34px] font-extrabold text-[#0032FF] mb-4">
+              <h3 className="text-[34px] font-bold text-[#0032FF] mb-4">
                 Somos la casa de cambio online líder del Perú
               </h3>
-              <p className="text-gray-600 pr-36 text-sm font-semibold">
+              <p className="text-[#3e4045] pr-28 text-[14px] font-normal">
                 ¡Tenemos el más alto volumen de dólares cambiados! Las personas consideran a Rextie como la casa de cambio online más confiable.
               </p>
             </div>
-            <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-[20px]">
               <div className="bg-[#eff2ff] py-11 rounded-xl flex flex-col  items-center text-center">
                 <img className='mb-6' src="/money-blue-icon.svg" alt="+ 6 mil millones" />
                 <h4 className="text-lg font-extrabold text-[#0032FF]">+ 6 mil millones</h4>
@@ -630,56 +639,62 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="container mx-auto px-6 justify-center py-8">
-        <h2 className="text-3xl font-bold text-center text-[#0032FF] mb-8">
-          Descubre lo que dicen nuestros clientes
-        </h2>
-        <p className="text-center text-sm font-semibold text-gray-600 mb-4">
-          Conoce de primera mano lo que es cambiar dinero con Rextie.
-        </p>
-        <div className="flex mx-60 gap-4 ">
-          <div className="bg-[#eff2ff] rounded-lg border-2 border-zinc-400 h-[391px] w-[25%]">
-            <div className="grid h-full content-between mx-9">
-              <h3></h3>
-              <p className="text-gray-800 mb-4 text-center text-base ">
-                "Mi experiencia al usar la aplicación fue estupenda. Es sencilla, transparente en las tasas de cambio, y me permitió ahorrar tiempo. Es la mejor app que he usado".
-              </p>
-              <p className="font-extrabold text-center text-gray-600 mb-4">Chanel Ramos</p>
-            </div>
-          </div>
-          <div className="bg-[#eff2ff] rounded-lg border-2 border-zinc-400 h-[391px] w-[25%]">
-            <div className="grid h-full content-between mx-9">
-              <h3></h3>
-              <p className="text-gray-800 mb-4 text-center">
-                "La mejor casa de cambio online, siempre se preocupan porque sea un servicio bueno y honesto. Me llaman incluso cuando pasó algún error y lo solucionan rápido".
-              </p>
-              <p className="font-extrabold text-center text-gray-600 mb-4">Grecia Retamozo</p>
-            </div>
+      <section className="container mx-auto max-w-[1110px] px-6 justify-center py-[60px]">
+        <div className='grid'>
+          <h2 className="text-[34px] font-bold text-center text-[#0032FF]  my-[22px]">
+            Descubre lo que dicen nuestros clientes
+          </h2>
 
-          </div>
-          <div className="bg-[#eff2ff] rounded-lg border-2 border-zinc-400 h-[391px] w-[25%]">
-            <div className="grid h-full content-between px-8">
-              <h3></h3>
-              <p className="text-gray-800 mb-4 text-center">
-                "Hasta el momento estoy muy contento con el servicio brindado por Rextie. Nunca tuve problemas con la app, es de mucha ayuda. La recomiendo".
-              </p>
-              <p className="font-extrabold text-gray-600 text-center mb-4">Jorge Suarez</p>
-            </div>
-
-          </div>
-          <div className="bg-[#eff2ff] rounded-lg border-2 border-zinc-400 h-[391px] w-[25%]">
-            <div className="grid h-full content-between px-8">
-              <h3></h3>
-              <p className="text-gray-800 mb-4 text-center">
-                "Rextie tiene una muy buena app, sencilla de usar y con muy buenos precios de venta y compra del dólar. Es la mejor casa de cambio online".
-              </p>
-              <p className="font-extrabold text-gray-600 text-center mb-4 ">Reni Ravina</p>
-            </div>
-
-          </div>
+          <p className="text-center text-[14px] font-normal text-gray-600 my-[17px]">
+            Conoce de primera mano lo que es cambiar dinero con Rextie.
+          </p>
         </div>
 
-      </div>
+
+        <div className='flip-card-people-think-rextie'>
+          <div className="flip-card-people-think-rextie__container-cards">
+            <div className="bg-[#eff2ff] rounded-lg border-[1px] border-[#707e9b] flip-card-ng-star-inserted ">
+              <div className="grid h-full content-between mx-9">
+                <h3></h3>
+                <p className="text-gray-800 mb-4 text-center text-base ">
+                  "Mi experiencia al usar la aplicación fue estupenda. Es sencilla, transparente en las tasas de cambio, y me permitió ahorrar tiempo. Es la mejor app que he usado".
+                </p>
+                <p className="font-extrabold text-center text-gray-600 mb-4">Chanel Ramos</p>
+              </div>
+            </div>
+            <div className="bg-[#eff2ff] rounded-lg border-[1px] border-[#707e9b] flip-card-ng-star-inserted">
+              <div className="grid h-full content-between mx-9">
+                <h3></h3>
+                <p className="text-gray-800 mb-4 text-center">
+                  "La mejor casa de cambio online, siempre se preocupan porque sea un servicio bueno y honesto. Me llaman incluso cuando pasó algún error y lo solucionan rápido".
+                </p>
+                <p className="font-extrabold text-center text-gray-600 mb-4">Grecia Retamozo</p>
+              </div>
+
+            </div>
+            <div className="bg-[#eff2ff] rounded-lg border-[1px] border-[#707e9b] flip-card-ng-star-inserted">
+              <div className="grid h-full content-between px-8">
+                <h3></h3>
+                <p className="text-gray-800 mb-4 text-center">
+                  "Hasta el momento estoy muy contento con el servicio brindado por Rextie. Nunca tuve problemas con la app, es de mucha ayuda. La recomiendo".
+                </p>
+                <p className="font-extrabold text-gray-600 text-center mb-4">Jorge Suarez</p>
+              </div>
+
+            </div>
+            <div className="bg-[#eff2ff] rounded-lg border-[1px] border-[#707e9b] flip-card-ng-star-inserted">
+              <div className="grid h-full content-between px-8">
+                <h3></h3>
+                <p className="text-gray-800 mb-4 text-center">
+                  "Rextie tiene una muy buena app, sencilla de usar y con muy buenos precios de venta y compra del dólar. Es la mejor casa de cambio online".
+                </p>
+                <p className="font-extrabold text-gray-600 text-center mb-4 ">Reni Ravina</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* 6ta seccion */}
