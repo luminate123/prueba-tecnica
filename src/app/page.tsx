@@ -61,7 +61,7 @@ export default function Home() {
               <div className='flex items-center max-[599px]:grow ng-star-inserted'>
                 <div className='flex-grow flex  items-center justify-end'>
                   <button className="text-[#FFFFFF] min-[480px]:text-white min-w-28 h-10 px-[.75rem] rounded-xl hover:bg-gray-hover-effect text-sm font-bold mr-5 ng-star-inserted">Iniciar sesión</button>
-                  <button _ngcontent-kpj-c63="" className="text-primary-white bg-[#0024B3] min-w-28 h-10 px-[.75rem] rounded-xl text-sm font-bold ng-star-inserted"> Regístrate </button>
+                  <button _ngcontent-kpj-c63="" className="button-register"> Regístrate </button>
                 </div>
               </div>
               {/* Sidebar */}
@@ -147,7 +147,7 @@ export default function Home() {
               {/* derecha*/}
               <div className="h-[528px] flex-col z-10 justify-center items-center inline-flex">
                 <div className="bg-[#000f49cc] min-[768px]:bg-[#000f49cc] min-[1023px]:bg-[#000f49cc] min-[1365px]:bg-[#000f49cc] backdrop-blur-md pt-3 p-2 min-[768px]:p-4 rounded-3xl min-w-[344px] min-[768px]:w-[546px] min-[1023px]:w-[556px] min-[1365px]:w-[468px]">
-                  <div className="self-stretch px-[50px] justify-center items-center gap-3 inline-flex">
+                  <div className="flex flex-row items-center justify-center mb-3 gap-3">
                     <img className="w-6 h-6 relative" src="/trophy-white.png" />
                     <div className="flex-col justify-start items-start inline-flex">
                       <div className="text-[10px] min-[480px]:text-[12px] text-white font-bold">Cambia al instante con todos los bancos en Perú</div>
@@ -174,36 +174,11 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="h-[308px] relative">
-                        <div className="w-[388px] pl-[122.28px] pr-[122.30px] pt-px pb-0.5 left-0 top-[168px] absolute bg-white justify-center items-center inline-flex">
-                          <div className="text-center text-[#0094b3] text-xs font-bold ">Usar un cupón o código</div>
-                        </div>
-                        <div className="w-[388px] h-[37px] left-0 top-[212px] absolute">
-                          <div className="left-[81.56px] top-[3.50px] absolute flex-col justify-start items-start inline-flex">
-                            <div className="text-[#000f49] text-sm font-semibold  leading-[21px]">Ahorro promedio*</div>
-                          </div>
-                          <div className="left-[215.31px] top-[3px] absolute flex-col justify-start items-start inline-flex">
-                            <div className="w-6 h-[19px] relative">
-                              <div className="w-[22.21px] h-[18.73px] left-[0.89px] top-[0.14px] absolute">
-                                <div className="w-[20.15px] h-[16.95px] left-[0.78px] top-[0.89px] absolute">
-                                  <svg _ngcontent-hvw-c9="" width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"><g _ngcontent-hvw-c9="" id="AHORRO ICONO" clip-path="url(#clip0_748_1177)"><g _ngcontent-hvw-c9="" id="Capa 2"><path _ngcontent-hvw-c9="" id="Vector" d="M15.9225 17.7753L14.8656 17.9693C14.5737 18.0123 14.2819 17.6797 14.2118 17.2227L14.0466 16.182C13.3175 16.3295 12.5756 16.4053 11.8317 16.4083C10.784 16.4026 9.74227 16.2503 8.73678 15.9558L8.55127 17.2205C8.48339 17.6729 8.19381 18.0146 7.90196 17.9716L5.89296 17.6752C5.60111 17.6322 5.42012 17.2227 5.48799 16.7702L5.79568 14.6753L5.81604 14.5622C4.11246 13.3405 3.04688 11.6052 3.04688 9.67992C3.0483 9.04582 3.16482 8.41725 3.39076 7.82477L3.47447 7.6121C4.60566 4.91986 7.92458 2.97195 11.8317 2.97195C12.5361 2.97156 13.2389 3.03669 13.9312 3.16651C14.4787 2.50363 15.5375 1.41543 16.8497 1.03082C16.8823 1.02225 16.9167 1.02263 16.9491 1.03191C16.9815 1.04119 17.0109 1.05904 17.034 1.08358C17.0571 1.10812 17.0733 1.13844 17.0806 1.17135C17.088 1.20427 17.0864 1.23856 17.0759 1.27063C16.7653 2.15606 16.5854 3.08208 16.542 4.01943C18.3972 4.92439 19.7795 6.3429 20.3383 8.01481H21.1437C21.3237 8.01481 21.4964 8.08631 21.6236 8.2136C21.7509 8.34088 21.8224 8.51352 21.8224 8.69352V11.2885C21.8224 11.4685 21.7509 11.6411 21.6236 11.7684C21.4964 11.8957 21.3237 11.9672 21.1437 11.9672H20.0894C19.9078 12.3246 19.6977 12.6646 19.462 12.9844" stroke="#000F49" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path _ngcontent-hvw-c9="" id="Vector_2" d="M1.93382 6.3611C1.6759 4.80232 2.86818 4.41771 2.89759 4.3702C2.92701 4.32269 2.88402 4.15527 2.8252 4.15527C2.81162 4.15527 1.42026 4.64621 1.7121 6.3973C1.86595 7.32035 2.66231 7.68686 3.3908 7.82487C3.41794 7.75473 3.44509 7.68233 3.4745 7.6122C2.80484 7.49456 2.06956 7.17556 1.93382 6.3611Z" fill="#000F49" stroke="#000F49" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path><path _ngcontent-hvw-c9="" id="Vector_3" d="M16.875 9.27614C17.4316 9.27614 17.8828 8.82492 17.8828 8.26832C17.8828 7.71172 17.4316 7.2605 16.875 7.2605C16.3184 7.2605 15.8672 7.71172 15.8672 8.26832C15.8672 8.82492 16.3184 9.27614 16.875 9.27614Z" fill="#000F49"></path></g><path _ngcontent-hvw-c9="" id="Vector_4" d="M17.6719 17.1437C18.5198 17.1437 19.2071 16.4563 19.2071 15.6085C19.2071 14.7606 18.5198 14.0732 17.6719 14.0732C16.8241 14.0732 16.1367 14.7606 16.1367 15.6085C16.1367 16.4563 16.8241 17.1437 17.6719 17.1437Z" fill="#FF6E00"></path></g><defs _ngcontent-hvw-c9=""><clipPath _ngcontent-hvw-c9="" id="clip0_748_1177"><rect _ngcontent-hvw-c9="" width="22.2124" height="18.7281" fill="white" transform="translate(0.894531 0.135986)"></rect></clipPath></defs></svg>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="left-[249.31px] top-[3.50px] absolute flex-col justify-start items-start inline-flex">
-                            <div className="text-[#000f49] text-sm font-semibold  leading-[21px]">S/ 30.83</div>
-                          </div>
-                        </div>
-                        <button className="w-[388px] h-14 pl-[130.05px] pr-[130.04px] py-[16.50px] left-0 top-[252px] absolute bg-[#0024b3] rounded-xl justify-center items-center inline-flex">
-                          <div className="py-px flex-col justify-start items-center inline-flex">
-                            <div className="text-center text-white text-[15px] font-black ">Regístrate</div>
-                          </div>
-                        </button>
-                        <div className="h-[152px] left-0 top-0 absolute flex-col justify-start items-start gap-2 inline-flex">
-                          <div className="self-stretch h-[72px] pl-[15px] pr-[15.02px] py-[11px] bg-white rounded-xl border border-[#000097]/60 justify-center items-center inline-flex">
+                        <div className="h-[152px] left-0 top-0  flex-col justify-start items-start gap-2 inline-flex">
+                          <div className="self-stretch h-[72px] px-[10px] py-[14px] bg-white rounded-xl border border-[#000097]/60 justify-center items-center inline-flex">
                             <div className="w-[71.59px] flex-col justify-start items-start inline-flex">
                               <div className="self-stretch h-[18px] flex-col justify-start items-start flex">
-                                <div className="self-stretch text-[#000f49] text-xs font-normal  leading-[18px]">Envía</div>
+                                <div className="self-stretch text-[#000f49] text-xs font-[400] leading-[18px]">Envía</div>
                               </div>
                               <div className="self-stretch justify-start items-center gap-[5px] inline-flex">
                                 <div className="justify-start items-start flex">
@@ -218,7 +193,7 @@ export default function Home() {
                               </div>
                             </div>
                             <div className="w-[286.39px] flex-col justify-start items-start inline-flex">
-                              <div className="self-stretch pt-5 justify-end items-start inline-flex">
+                              <div className="self-stretch pt-5  justify-end items-start inline-flex">
                                 <div className="self-stretch justify-start items-start flex">
                                   <div className="self-stretch justify-start items-start flex">
                                     <div className="self-stretch bg-white flex-col justify-start items-start inline-flex">
@@ -236,7 +211,7 @@ export default function Home() {
                               </div>
                             </div>
                           </div>
-                          <div className='absolute top-[35%] right-[50%]'>
+                          <div className='switcher'>
                             <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M40.64 20C40.64 8.9543 31.6857 0 20.64 0C9.59432 0 0.640015 8.9543 0.640015 20C0.640015 31.0457 9.59432 40 20.64 40C31.6857 40 40.64 31.0457 40.64 20Z" fill="#0024B3" />
                               <mask id="mask0_1_369" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="10" y="10" width="21" height="20">
@@ -250,7 +225,7 @@ export default function Home() {
                               </g>
                             </svg>
                           </div>
-                          <div className="self-stretch h-[72px] pl-[15px] pr-[15.02px] py-[11px] bg-white rounded-xl border border-[#000097]/60 justify-center items-center inline-flex">
+                          <div className="self-stretch h-[72px]  px-[14px] bg-white rounded-xl border border-[#000097]/60 justify-center items-center inline-flex">
                             <div className="w-[71.59px] flex-col justify-start items-start inline-flex">
                               <div className="self-stretch h-[18px] flex-col justify-start items-start flex">
                                 <div className="self-stretch text-[#000f49] text-xs font-normal  leading-[18px]">Recibe</div>
@@ -301,20 +276,39 @@ export default function Home() {
                               </div>
                             </div>
                           </div>
-                          <div className="w-10 h-10 left-[174px] top-[56px] absolute">
-                            <div className="w-5 h-5 left-[10px] top-[10px] absolute">
-                              <div className="w-5 h-[16.67px] left-0 top-[1.67px] absolute">
+
+                        </div>
+                        <div className=" font-bold have-coupon">Usar un cupón o código</div>
+                        <div className="fx-layout-wc-row-average-savings">
+                          <div className="left-[81.56px] top-[3.50px]  flex-col justify-start items-start inline-flex">
+                            <div className="text-[#000f49] text-sm font-semibold  leading-[21px]">Ahorro promedio*</div>
+                          </div>
+                          <div className="left-[215.31px] top-[3px]  flex-col justify-start items-start inline-flex">
+                            <div className="w-6 h-[19px] relative">
+                              <div className="w-[22.21px] h-[18.73px] left-[0.89px] top-[0.14px] ">
+                                <div className="w-[20.15px] h-[16.95px] left-[0.78px] top-[0.89px] ">
+                                  <svg _ngcontent-hvw-c9="" width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"><g _ngcontent-hvw-c9="" id="AHORRO ICONO" clip-path="url(#clip0_748_1177)"><g _ngcontent-hvw-c9="" id="Capa 2"><path _ngcontent-hvw-c9="" id="Vector" d="M15.9225 17.7753L14.8656 17.9693C14.5737 18.0123 14.2819 17.6797 14.2118 17.2227L14.0466 16.182C13.3175 16.3295 12.5756 16.4053 11.8317 16.4083C10.784 16.4026 9.74227 16.2503 8.73678 15.9558L8.55127 17.2205C8.48339 17.6729 8.19381 18.0146 7.90196 17.9716L5.89296 17.6752C5.60111 17.6322 5.42012 17.2227 5.48799 16.7702L5.79568 14.6753L5.81604 14.5622C4.11246 13.3405 3.04688 11.6052 3.04688 9.67992C3.0483 9.04582 3.16482 8.41725 3.39076 7.82477L3.47447 7.6121C4.60566 4.91986 7.92458 2.97195 11.8317 2.97195C12.5361 2.97156 13.2389 3.03669 13.9312 3.16651C14.4787 2.50363 15.5375 1.41543 16.8497 1.03082C16.8823 1.02225 16.9167 1.02263 16.9491 1.03191C16.9815 1.04119 17.0109 1.05904 17.034 1.08358C17.0571 1.10812 17.0733 1.13844 17.0806 1.17135C17.088 1.20427 17.0864 1.23856 17.0759 1.27063C16.7653 2.15606 16.5854 3.08208 16.542 4.01943C18.3972 4.92439 19.7795 6.3429 20.3383 8.01481H21.1437C21.3237 8.01481 21.4964 8.08631 21.6236 8.2136C21.7509 8.34088 21.8224 8.51352 21.8224 8.69352V11.2885C21.8224 11.4685 21.7509 11.6411 21.6236 11.7684C21.4964 11.8957 21.3237 11.9672 21.1437 11.9672H20.0894C19.9078 12.3246 19.6977 12.6646 19.462 12.9844" stroke="#000F49" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path _ngcontent-hvw-c9="" id="Vector_2" d="M1.93382 6.3611C1.6759 4.80232 2.86818 4.41771 2.89759 4.3702C2.92701 4.32269 2.88402 4.15527 2.8252 4.15527C2.81162 4.15527 1.42026 4.64621 1.7121 6.3973C1.86595 7.32035 2.66231 7.68686 3.3908 7.82487C3.41794 7.75473 3.44509 7.68233 3.4745 7.6122C2.80484 7.49456 2.06956 7.17556 1.93382 6.3611Z" fill="#000F49" stroke="#000F49" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path><path _ngcontent-hvw-c9="" id="Vector_3" d="M16.875 9.27614C17.4316 9.27614 17.8828 8.82492 17.8828 8.26832C17.8828 7.71172 17.4316 7.2605 16.875 7.2605C16.3184 7.2605 15.8672 7.71172 15.8672 8.26832C15.8672 8.82492 16.3184 9.27614 16.875 9.27614Z" fill="#000F49"></path></g><path _ngcontent-hvw-c9="" id="Vector_4" d="M17.6719 17.1437C18.5198 17.1437 19.2071 16.4563 19.2071 15.6085C19.2071 14.7606 18.5198 14.0732 17.6719 14.0732C16.8241 14.0732 16.1367 14.7606 16.1367 15.6085C16.1367 16.4563 16.8241 17.1437 17.6719 17.1437Z" fill="#FF6E00"></path></g><defs _ngcontent-hvw-c9=""><clipPath _ngcontent-hvw-c9="" id="clip0_748_1177"><rect _ngcontent-hvw-c9="" width="22.2124" height="18.7281" fill="white" transform="translate(0.894531 0.135986)"></rect></clipPath></defs></svg>
+                                </div>
                               </div>
                             </div>
                           </div>
+                          <div className="left-[249.31px] top-[3.50px]  flex-col justify-start items-start inline-flex">
+                            <div className="text-[#000f49] text-sm font-semibold  leading-[21px]">S/ 30.83</div>
+                          </div>
                         </div>
+                        <button className="fx-layout-quote-btn ">
+                          <strong>
+                            Ingresar a Rextie
+                          </strong>
+                        </button>
+
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="px-3 pt-2 flex-col justify-start items-start flex">
                   <div className="flex-col justify-start items-center flex">
-                    <div className="text-center text-[#000f49] text-[10px] font-normal  leading-[15px]">(*)Cálculo respecto al tipo de cambio publicado por entidades bancarias.</div>
+                    <div className="text-center text-[#000f49] text-[10px] font-[400]  leading-[15px]">(*)Cálculo respecto al tipo de cambio publicado por entidades bancarias.</div>
                   </div>
                 </div>
               </div>
