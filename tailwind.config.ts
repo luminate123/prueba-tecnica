@@ -30,7 +30,9 @@ const config: Config = {
       ],
     },
     extend: {
-
+      screens: {
+        'xs': '480px',
+      },
     },
 
   },

@@ -24,25 +24,25 @@ export default function Home() {
     "/ASEP.png",
   ]
   return (
-    <div className='font-poppins text-shadow'>
-      <div className="text-white min-[480px]: bg-no-repeat bg-cover bg-center h-auto min-[1281px]:h-[682px] image-container" style={{
-        backgroundImage: "url('/banner-person.webp')",
-      }}>
-        <div className='relative grid justify-items-center'>
+    <div className='font-poppins text-shadow ' >
+      <div className="bg-[url('/banner-mobile.png')] min-[480px]:bg-[url('/banner-person.webp')] bg-no-repeat bg-cover bg-center h-auto min-[1281px]:h-[682px] image-container">
+        <div className='relative flex-col justify-items-center'>
           {/* Header */}
           <header className="font-size-14 z-[100] h-82 w-full left-0 top-0 md:top-10 ng-star-inserted">
             <div className="w-full left-0 top-0 h-10 hidden min-[1025px]:block ng-star-inserted">
               <ul className="max-w-7xl max-[1919px]:max-w-[75rem] mx-auto px-2.5 py-1.5 flex gap-[30px] list-none ng-star-inserted">
                 <li>
-                  <a href="#" className="border-b-[3px] border-[#ff6e00] font-bold pb-0.4">Personas</a>
+                  <a href="#" className="text-white border-b-[3px] border-[#ff6e00] font-bold pb-0.4">Personas</a>
                 </li>
                 <li>
-                  <a href="#" className="">Empresas</a>
+                  <a href="#" className="text-white">Empresas</a>
                 </li>
               </ul>
             </div>
-            <nav className="max-w-7xl max-[1919px]:max-w-[75rem] mx-auto flex items-center justify-between h-[82px] px-2.5 ng-star-inserted">
+            <nav className="min-w-96:w-96 max-[1919px]:max-w-[75rem] mx-auto flex items-center justify-between h-[82px] px-2.5 ng-star-inserted">
               <img src="/rextie-icon-redesign.svg" alt="Rextie Logo" className="object-cover object-left-top hidden min-[480px]:block ng-star-inserted" />
+              <img _ngcontent-yqd-c63="" src="/isotipo-rextie.svg" alt="Rextie: La Casa de cambio online líder del Perú" className="object-cover object-left-top flex min-[480px]:hidden ng-star-inserted" />
+
               <ul className='line-menu grow-[3] flex-wrap pl-5 justify-end hidden min-[1025px]:flex ng-star-inserted'>
                 <li className='flex items-center'>
                   <a href="#" className="text-white text-sm rounded-md h-6 mx-[.75rem] flex items-center relative">Nosotros</a>
@@ -59,17 +59,27 @@ export default function Home() {
               </ul>
               <span className='w-10 items-center justify-center text-[#707E9B] hidden min-[1025px]:flex ng-star-inserted'>|</span>
               <div className='flex items-center max-[599px]:grow ng-star-inserted'>
-                <div className='flex-grow flex  items-center justify-end'>
-                  <button className="text-[#FFFFFF] min-[480px]:text-white min-w-28 h-10 px-[.75rem] rounded-xl hover:bg-gray-hover-effect text-sm font-bold mr-5 ng-star-inserted">Iniciar sesión</button>
+                <div className='flex-grow flex items-center justify-end'>
+                  <button className="text-[#061756] min-[480px]:text-white min-w-28 h-10 px-[.75rem] rounded-xl hover:bg-gray-hover-effect text-sm font-bold mr-5 ng-star-inserted">Iniciar sesión</button>
                   <button _ngcontent-kpj-c63="" className="button-register"> Regístrate </button>
                 </div>
-              </div>
-              {/* Sidebar */}
-              <div className="block lg:hidden">
-                <button onClick={toggleSidebar} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                  <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
+                {/* Sidebar */}
+                <button _ngcontent-ihi-c63="" aria-pressed="false" className="items-center justify-center w-6 flex min-[1025px]:hidden">
+                  <div _ngcontent-ihi-c63="" hamburguercolor="#0024B3" className="block min-[480px]:hidden" _nghost-ihi-c62="">
+                    <svg _ngcontent-ihi-c62="" xmlns="http://www.w3.org/2000/svg" width="22" height="16" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="header" stroke="#0024B3">
+                      <path _ngcontent-ihi-c62="" d="M1.25 8h19.5M1.25 1.5h19.5m-19.5 13h19.5">
+                      </path>
+                    </svg>
+                  </div>
+                  <div _ngcontent-ihi-c63="" hamburguercolor="#FFFFFF" className="hidden min-[480px]:block" _nghost-ihi-c62="">
+                    <svg _ngcontent-ihi-c62="" xmlns="http://www.w3.org/2000/svg" width="22" height="16" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="header" stroke="#FFFFFF">
+                      <path _ngcontent-ihi-c62="" d="M1.25 8h19.5M1.25 1.5h19.5m-19.5 13h19.5">
+                      </path>
+                    </svg>
+                  </div>
                 </button>
               </div>
+
             </nav>
           </header>
 
@@ -91,226 +101,205 @@ export default function Home() {
               {/* izquierda */}
               <div className="flex flex-col items-start max-[1281px]:items-center min-[480px]:mt-6">
                 <div className="flex-col justify-start items-start flex">
-                  <div className="pb-6 flex-col justify-start items-start flex">
-                    <div className="pr-[16.64px] flex-col justify-start items-start flex">
-                      <div className="text-white text-[48px]  font-bold leading-[56px] tracking-[-.025em]">La casa de cambio online líder del Perú</div>
-                    </div>
+                  <div className="flex-col justify-start items-start flex">
+                    <div className="text-[#061756] font-bold tracking-tight min-[480px]:text-white text-[32px] min-[480px]:text-[48px] leading-[48px] min-[480px]:leading-[56px] max-[945px]:text-center mb-3 min-[1281px]:mb-6 mx-4 min-[1281px]:mx-0">La casa de cambio online líder del Perú</div>
                   </div>
-                  <div className="pr-3 flex-col justify-start items-start flex">
-                    <div className="pr-[15.09px] flex-col justify-start items-start flex">
-                      <div className="text-white text-base  leading-normal pr-[.75rem]">Celebramos un nuevo récord: 6 mil millones de dólares cambiados para nuestros clientes</div>
-                    </div>
+                </div>
+                <div className=" flex-col justify-start items-start flex">
+                  <div className="flex-col justify-start items-start flex">
+                    <div className="text-[#061756] min-[480px]:text-white text-[12px] min-[413px]:text-[14px] min-[1281px]:text-[16px] max-[945px]:text-center mx-[10px] min-[480px]:mx-0 min-[1281px]:mr-3">Celebramos un nuevo récord: 6 mil millones de dólares cambiados para nuestros clientes</div>
                   </div>
-                  <div className="pt-12 pb-6 flex-col justify-start items-start flex">
-                    <div className="justify-start items-start gap-4 inline-flex">
-                      <div className="self-stretch py-[5.25px] justify-start items-center gap-4 flex">
-                        <div className="w-[87px] h-7 relative">
-                          <div className="w-[87px] h-7 left-0 top-0 absolute">
-                            <img className="w-[auto] h-auto relative" src="/visa-white-yellow-logo.svg" />
-                          </div>
-                        </div>
-                        <div className="w-[95px] flex-col justify-start items-start inline-flex">
-                          <div className="text-white text-xs font-normal leading-[18px]">Aliado Estratégico</div>
-                        </div>
-                      </div>
-                      <div className="self-stretch justify-start items-center gap-4 flex">
-                        <div className="justify-start items-center gap-4 flex">
-                          <div className="w-[50px] h-8 relative">
-                            <div className="w-[50px] h-8 left-0 top-0 absolute">
-                              <img className="w-[auto] h-auto relative" src="/citi-white.svg" />
-                            </div>
-                          </div>
-                          <div className="w-12 h-[46.50px] relative">
-                            <div className="w-12 h-[46.50px] left-0 top-0 absolute">
-                              <img className="w-[72px] h-auto relative" src="/rpp-home.svg" />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-[95px] flex-col justify-start items-start inline-flex">
-                          <div className="text-white text-xs font-normal leading-[18px]">Inversionistas estratégicos</div>
-                        </div>
-                      </div>
-                    </div>
+                </div>
+                <div className="flex  flex-row-reverse min-[480px]:flex-row my-6 min-[1281px]:mt-12 max-[560px]:items-end gap-6 min-[480px]:gap-4">
+
+                  <div className="flex flex-row items-center justify-start gap-2 min-[480px]:gap-4 max-[560px]:text-center max-[560px]:flex-col">
+                    <img className="hidden min-[480px]:block max-[560px]:mb-[5px]" src="/visa-white-yellow-logo.svg" />
+                    <img src="/visa-home.svg" alt="visa" className="w-[2.5rem] block min-[480px]:hidden" />
+                    <span className=" mt-1 min-[480px]:mt-0 text-[#061756] min-[480px]:text-white w-[95px] max-[560px]:w-[100%] text-[10px] sm:text-[12px] text-[400]">Aliado Estratégico</span>
                   </div>
-                  <div className="pt-6 flex-col justify-start items-start flex">
-                    <div className="justify-start items-center inline-flex">
-                      <div className="pr-2.5 flex-col justify-start items-start inline-flex">
-                        <img className="w-[71px] h-10 relative" src="/iso-white.png" />
-                      </div>
-                      <div className="flex-col justify-start items-start inline-flex">
-                        <div className="text-white text-xs font-normal leading-[18px]">Certificados con ISO 27001</div>
-                      </div>
+                  <div className="flex flex-row items-center justify-start max-[560px]:justify-center gap-2 min-[480px]:gap-4 max-[560px]:flex-col">
+                    <div className="flex flex-row items-center min-[480px]:gap-4">
+                      <img className="hidden min-[480px]:block" src="/citi-white.svg" />
+                      <img src="/citi.png" alt="citi" className="block px-4 min-[480px]:hidden" />
+                      <img className="w-8 min-[480px]:w-12" src="/rpp-home.svg" />
+                    </div>
+                    <span className="text-[#061756] min-[480px]:text-white w-[95px] max-[560px]:w-[100%] max-[560px]:text-center text-[10px] sm:text-[12px] text-[400]">Inversionistas estratégicos</span>
+
+                  </div>
+
+                </div>
+                <div className="hidden min-[1281px]:flex flex-row mt-6 items-center justify-start text-white">
+                  <div className="justify-start items-center inline-flex">
+                    <div className="pr-2.5 flex-col justify-start items-start inline-flex">
+                      <img className="w-[71px] h-10 relative" src="/iso-white.png" />
+                    </div>
+                    <div className="flex-col justify-start items-start inline-flex">
+                      <div className="text-[#061756] min-[480px]:text-white text-xs font-normal leading-[18px]">Certificados con ISO 27001</div>
                     </div>
                   </div>
                 </div>
               </div>
               {/* derecha*/}
-              <div className="h-[528px] flex-col z-10 justify-center items-center inline-flex">
-                <div className="bg-[#000f49cc] min-[768px]:bg-[#000f49cc] min-[1023px]:bg-[#000f49cc] min-[1365px]:bg-[#000f49cc] backdrop-blur-md pt-3 p-2 min-[768px]:p-4 rounded-3xl min-w-[344px] min-[768px]:w-[546px] min-[1023px]:w-[556px] min-[1365px]:w-[468px]">
+              <div className="flex flex-col items-center justify-center z-10">
+                <div className="bg-[#061756] min-[768px]:bg-[#061756] min-[1023px]:bg-[#061756] min-[1365px]:bg-[#061756] backdrop-blur-md pt-3 p-2 min-[768px]:p-4 rounded-3xl min-w-[344px] min-[768px]:w-[546px] min-[1023px]:w-[556px] min-[1365px]:w-[468px]">
                   <div className="flex flex-row items-center justify-center mb-3 gap-3">
-                    <img className="w-6 h-6 relative" src="/trophy-white.png" />
-                    <div className="flex-col justify-start items-start inline-flex">
-                      <div className="text-[10px] min-[480px]:text-[12px] text-white font-bold">Cambia al instante con todos los bancos en Perú</div>
-                    </div>
+                    <img src="/trophy-white.png" alt="" />
+                    <span className="text-[10px] min-[480px]:text-[12px] text-white font-bold">Cambia al instante con todos los bancos en Perú</span>
                   </div>
-                  <div className="self-stretch justify-center items-start inline-flex">
-                    <div className="grow shrink basis-0 px-6 pt-[25px] pb-6 bg-white rounded-[22px] flex-col justify-start items-start gap-6 inline-flex">
-                      <div className="self-stretch h-14 pb-[3px] bg-white rounded-xl flex-col justify-center items-center flex">
-                        <div className="w-[388px] bg-[#0024b3]/10 rounded-xl justify-center items-center inline-flex">
-                          <div className="grow shrink basis-0 h-[53px] p-1 flex-col justify-start items-start inline-flex">
-                            <div className="self-stretch h-[45px] pl-[29.42px] pr-[29.44px] py-3 rounded-xl flex-col justify-center items-center flex">
-                              <div className="flex-col justify-start items-center flex">
-                                <div className="text-center text-[#000f49] text-sm font-semibold  leading-[21px]">Compra S/ 3.7830</div>
-                              </div>
-                            </div>
+
+                  <div className="quote-container">
+                    <div className="fx-layout-1 ">
+                      <div className="fx-layout-2">
+                        <div className="price_buy">
+                          <div className="text-[14px] font-semibold max-[480px]:text-[12px] amount">
+                            <span className="operation ">Compra </span>
+                            <span>S/ </span>
+                            3.7765
                           </div>
-                          <div className="grow shrink basis-0 h-[53px] p-1 flex-col justify-start items-start inline-flex">
-                            <div className="self-stretch h-[45px] px-[40.50px] py-3 bg-white rounded-xl flex-col justify-center items-center flex">
-                              <div className="flex-col justify-start items-center flex">
-                                <div className="text-center text-[#000f49] text-sm font-semibold  leading-[21px]">Venta S/ 3.8110</div>
-                              </div>
-                            </div>
+                        </div>
+                        <div className="price_sell_active">
+                          <div className="text-[14px] font-semibold max-[480px]:text-[12px] amount">
+                            <span className="operation">Venta </span>
+                            <span>S/ </span>3.8145
                           </div>
                         </div>
                       </div>
-                      <div className="h-[308px] relative">
-                        <div className="h-[152px] left-0 top-0  flex-col justify-start items-start gap-2 inline-flex">
-                          <div className="self-stretch h-[72px] px-[10px] py-[14px] bg-white rounded-xl border border-[#000097]/60 justify-center items-center inline-flex">
-                            <div className="w-[71.59px] flex-col justify-start items-start inline-flex">
-                              <div className="self-stretch h-[18px] flex-col justify-start items-start flex">
-                                <div className="self-stretch text-[#000f49] text-xs font-[400] leading-[18px]">Envía</div>
-                              </div>
-                              <div className="self-stretch justify-start items-center gap-[5px] inline-flex">
-                                <div className="justify-start items-start flex">
-                                  <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3.44801 0C1.58701 0 0.641014 1.475 0.641014 3.293V9.878C0.641014 11.696 1.58801 13.17 3.44801 13.17H6.81601V0H3.44801ZM15.799 0H12.43V13.17H15.799C17.659 13.17 18.606 11.696 18.606 9.878V3.293C18.606 1.475 17.659 0.001 15.799 0.001V0Z" fill="#EC1C24" />
-                                  </svg>
-
-                                </div>
-                                <div className="flex-col justify-start items-start inline-flex">
-                                  <div className="text-[#000f49] text-xl font-semibold  leading-[30px]">PEN</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="w-[286.39px] flex-col justify-start items-start inline-flex">
-                              <div className="self-stretch pt-5  justify-end items-start inline-flex">
-                                <div className="self-stretch justify-start items-start flex">
-                                  <div className="self-stretch justify-start items-start flex">
-                                    <div className="self-stretch bg-white flex-col justify-start items-start inline-flex">
-                                      <div className="self-stretch h-8 py-px flex-col justify-start items-end flex">
-                                        <input
-                                          type="text"
-                                          className="text-right text-[#000f49] text-xl font-semibold border-none focus:outline-none"
-                                          defaultValue="S/ 1,000.00"
-                                          style={{ border: 'none' }}
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className='switcher'>
-                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M40.64 20C40.64 8.9543 31.6857 0 20.64 0C9.59432 0 0.640015 8.9543 0.640015 20C0.640015 31.0457 9.59432 40 20.64 40C31.6857 40 40.64 31.0457 40.64 20Z" fill="#0024B3" />
-                              <mask id="mask0_1_369" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="10" y="10" width="21" height="20">
-                                <path d="M30.64 10H10.64V30H30.64V10Z" fill="white" />
-                              </mask>
-                              <g mask="url(#mask0_1_369)">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M10.8841 16.4225C10.5586 16.0971 10.5586 15.5694 10.8841 15.244L14.2174 11.9107C14.5428 11.5852 15.0705 11.5852 15.3959 11.9107L18.7293 15.244C19.0547 15.5694 19.0547 16.0971 18.7293 16.4225C18.4038 16.7479 17.8762 16.7479 17.5507 16.4225L14.8067 13.6784L12.0626 16.4225C11.7372 16.7479 11.2095 16.7479 10.8841 16.4225Z" fill="white" />
-                                <path fillRule="evenodd" clipRule="evenodd" d="M15.64 24.1666C15.64 24.8296 15.9034 25.4655 16.3722 25.9344C16.8411 26.4032 17.477 26.6666 18.14 26.6666H19.8067C20.2669 26.6666 20.64 27.0397 20.64 27.4999C20.64 27.9602 20.2669 28.3333 19.8067 28.3333H18.14C17.0349 28.3333 15.9751 27.8943 15.1937 27.1129C14.4123 26.3315 13.9733 25.2717 13.9733 24.1666V12.4999C13.9733 12.0397 14.3464 11.6666 14.8067 11.6666C15.2669 11.6666 15.64 12.0397 15.64 12.4999V24.1666Z" fill="white" />
-                                <path fillRule="evenodd" clipRule="evenodd" d="M22.5507 23.5773C22.8762 23.2519 23.4038 23.2519 23.7293 23.5773L26.4733 26.3214L29.2174 23.5773C29.5428 23.2519 30.0705 23.2519 30.3959 23.5773C30.7214 23.9028 30.7214 24.4304 30.3959 24.7558L27.0626 28.0892C26.7372 28.4146 26.2095 28.4146 25.8841 28.0892L22.5507 24.7558C22.2253 24.4304 22.2253 23.9028 22.5507 23.5773Z" fill="white" />
-                                <path fillRule="evenodd" clipRule="evenodd" d="M20.64 12.4999C20.64 12.0397 21.0131 11.6666 21.4733 11.6666H23.14C24.2451 11.6666 25.3049 12.1056 26.0863 12.887C26.8677 13.6684 27.3067 14.7282 27.3067 15.8333V27.4999C27.3067 27.9602 26.9336 28.3333 26.4733 28.3333C26.0131 28.3333 25.64 27.9602 25.64 27.4999V15.8333C25.64 15.1702 25.3766 14.5343 24.9078 14.0655C24.4389 13.5966 23.803 13.3333 23.14 13.3333H21.4733C21.0131 13.3333 20.64 12.9602 20.64 12.4999Z" fill="white" />
+                    </div>
+                    <div className="offer">
+                      <form className="fx-layout-3">
+                        <div className="quote-input-group ">
+                          <div appdebounceclick="" className="switcher" _nghost-ihe-c6="">
+                            <svg _ngcontent-ihe-c6="" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect _ngcontent-ihe-c6="" width="40" height="40" rx="20" fill="#0024B3"></rect>
+                              <g _ngcontent-ihe-c6="" clip-path="url(#clip0_748_1168)">
+                                <path _ngcontent-ihe-c6="" fill-rule="evenodd" clip-rule="evenodd" d="M10.2441 16.4225C9.91864 16.0971 9.91864 15.5694 10.2441 15.244L13.5774 11.9107C13.9028 11.5852 14.4305 11.5852 14.7559 11.9107L18.0893 15.244C18.4147 15.5694 18.4147 16.0971 18.0893 16.4225C17.7638 16.7479 17.2362 16.7479 16.9107 16.4225L14.1667 13.6784L11.4226 16.4225C11.0972 16.7479 10.5695 16.7479 10.2441 16.4225Z" fill="white">
+                                </path>
+                                <path _ngcontent-ihe-c6="" fill-rule="evenodd" clip-rule="evenodd" d="M15 24.1666C15 24.8296 15.2634 25.4655 15.7322 25.9344C16.2011 26.4032 16.837 26.6666 17.5 26.6666L19.1667 26.6666C19.6269 26.6666 20 27.0397 20 27.4999C20 27.9602 19.6269 28.3333 19.1667 28.3333L17.5 28.3333C16.3949 28.3333 15.3351 27.8943 14.5537 27.1129C13.7723 26.3315 13.3333 25.2717 13.3333 24.1666L13.3333 12.4999C13.3333 12.0397 13.7064 11.6666 14.1667 11.6666C14.6269 11.6666 15 12.0397 15 12.4999L15 24.1666Z" fill="white">
+                                </path>
+                                <path _ngcontent-ihe-c6="" fill-rule="evenodd" clip-rule="evenodd" d="M21.9107 23.5773C22.2362 23.2519 22.7638 23.2519 23.0893 23.5773L25.8333 26.3214L28.5774 23.5773C28.9028 23.2519 29.4305 23.2519 29.7559 23.5773C30.0814 23.9028 30.0814 24.4304 29.7559 24.7558L26.4226 28.0892C26.0972 28.4146 25.5695 28.4146 25.2441 28.0892L21.9107 24.7558C21.5853 24.4304 21.5853 23.9028 21.9107 23.5773Z" fill="white">
+                                </path>
+                                <path _ngcontent-ihe-c6="" fill-rule="evenodd" clip-rule="evenodd" d="M20 12.4999C20 12.0397 20.3731 11.6666 20.8333 11.6666L22.5 11.6666C23.6051 11.6666 24.6649 12.1056 25.4463 12.887C26.2277 13.6684 26.6667 14.7282 26.6667 15.8333L26.6667 27.4999C26.6667 27.9602 26.2936 28.3333 25.8333 28.3333C25.3731 28.3333 25 27.9602 25 27.4999L25 15.8333C25 15.1702 24.7366 14.5343 24.2678 14.0655C23.7989 13.5966 23.163 13.3333 22.5 13.3333L20.8333 13.3333C20.3731 13.3333 20 12.9602 20 12.4999Z" fill="white">
+                                </path>
                               </g>
+                              <defs _ngcontent-ihe-c6="">
+                                <clipPath _ngcontent-ihe-c6="" id="clip0_748_1168">
+                                  <rect _ngcontent-ihe-c6="" width="20" height="20" fill="white" transform="translate(10 10)">
+                                  </rect>
+                                </clipPath>
+                              </defs>
                             </svg>
                           </div>
-                          <div className="self-stretch h-[72px]  px-[14px] bg-white rounded-xl border border-[#000097]/60 justify-center items-center inline-flex">
-                            <div className="w-[71.59px] flex-col justify-start items-start inline-flex">
-                              <div className="self-stretch h-[18px] flex-col justify-start items-start flex">
-                                <div className="self-stretch text-[#000f49] text-xs font-normal  leading-[18px]">Recibe</div>
+                          <div className="fx-layout-4">
+                            <div className="fxFlex-20">
+                              <div className="title">
+                                Envía
                               </div>
-                              <div className="self-stretch justify-start items-center gap-[5px] inline-flex">
-                                <div className="justify-start items-start flex">
-                                  <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.94117 2.02319V3.03492H18.5991C18.5842 2.70865 18.5522 2.29618 18.4377 2.02319" fill="#EC1C24" />
-                                    <path d="M17.9352 1.01263H7.94117V2.02436H18.4377C18.3237 1.64691 18.1541 1.30268 17.9352 1.01263Z" fill="#E6E7E8" />
-                                    <path d="M15.8016 0.000793457H7.94117V1.01252H17.9352C17.4666 0.386927 16.6955 0.000793457 15.8016 0.000793457Z" fill="#EC1C24" />
-                                    <path d="M18.5991 3.03595H7.94117V4.04768H18.6089V3.3733C18.6089 3.31313 18.6053 3.25446 18.6036 3.1955C18.6025 3.17933 18.6008 3.13773 18.5991 3.03595Z" fill="#E6E7E8" />
-                                    <path d="M7.94117 5.0594H18.6089V4.04767H7.94117V5.0594Z" fill="#EC1C24" />
-                                    <path d="M7.94117 6.07026H18.6089V5.05853H7.94117V6.07026Z" fill="#E6E7E8" />
-                                    <path d="M7.94117 6.07013H18.6089V7.08186H7.94117V6.07013Z" fill="#EC1C24" />
-                                    <path d="M0.640503 7.08362V8.09535H18.6073V7.08362H7.9395H0.640503Z" fill="#E6E7E8" />
-                                    <path d="M0.640503 8.0946H18.6073V9.10633H0.640503V8.0946Z" fill="#EC1C24" />
-                                    <path d="M0.641907 9.72856C0.641907 9.72856 0.63938 9.97371 0.646118 10.118H18.6017C18.6095 9.97012 18.6059 9.72856 18.6059 9.72856L18.6073 9.10626H0.640503L0.641907 9.72856Z" fill="#E6E7E8" />
-                                    <path d="M3.44702 13.1701H15.7992C16.6955 13.1701 17.4406 12.8229 17.9496 12.1404H1.29382C1.81935 12.8379 2.57844 13.1701 3.44562 13.1701" fill="#EC1C24" />
-                                    <path d="M1.29523 12.1414H17.951C18.173 11.8406 18.3388 11.4972 18.4394 11.1297H0.80957C0.912064 11.4961 1.07719 11.8391 1.29664 12.1414" fill="#E6E7E8" />
-                                    <path d="M0.807233 11.1297H18.4371C18.529 10.8006 18.5837 10.4609 18.5999 10.118H0.644409C0.672202 10.464 0.698029 10.7253 0.807233 11.1297Z" fill="#EC1C24" />
-                                    <path d="M7.9395 0.000793457H3.44781C1.58741 0.000793457 0.640503 1.47499 0.640503 3.29341V7.0829H7.9395V0.000793457Z" fill="#176496" />
-                                    <path d="M1.42787 1.78971L1.58059 1.66459L1.73302 1.78971L1.67378 1.58856L1.82566 1.46554H1.63814L1.58003 1.26349L1.52219 1.46554H1.33495L1.48738 1.58856L1.42787 1.78971ZM2.43681 1.78971L2.58953 1.66459L2.74197 1.78971L2.68301 1.58856L2.83461 1.46554H2.64736L2.58925 1.26349L2.53142 1.46554H2.34361L2.49605 1.58856L2.43681 1.78971ZM3.54991 1.78971L3.70235 1.66459L3.85506 1.78971L3.79583 1.58856L3.94742 1.46554H3.7613L3.70235 1.26349L3.64424 1.46554H3.45811L3.60886 1.58856L3.54991 1.78971ZM4.65487 1.78971L4.8073 1.66459L4.96002 1.78971L4.90107 1.58856L5.05266 1.46554H4.86457L4.8073 1.26349L4.74947 1.46554H4.56194L4.7141 1.58856L4.65487 1.78971ZM5.76375 1.78971L5.91647 1.66459L6.06891 1.78971L6.00996 1.58856L6.16183 1.46554H5.97402L5.91619 1.26349L5.85836 1.46554H5.67111L5.82271 1.58856L5.76375 1.78971ZM1.9649 2.31503L2.11734 2.19021L2.26978 2.31503L2.2111 2.11418L2.3627 1.99116H2.17517L2.11706 1.78941L2.06007 1.99116H1.87198L2.02386 2.11418L1.9649 2.31503ZM2.97413 2.31503L3.12657 2.19021L3.279 2.31503L3.22005 2.11418L3.37165 1.99116H3.18299L3.12657 1.78941L3.06846 1.99116H2.88121L3.03308 2.11418L2.97413 2.31503ZM4.08723 2.31503L4.23938 2.19021L4.39182 2.31503L4.33287 2.11418L4.48474 1.99116H4.2975L4.23938 1.78941L4.18127 1.99116H3.99375L4.14562 2.11418L4.08723 2.31503ZM5.19162 2.31503L5.34434 2.19021L5.49706 2.31503L5.43726 2.11418L5.58942 1.99116H5.40217L5.34406 1.78941L5.28651 1.99116H5.09898L5.25086 2.11418L5.19162 2.31503ZM6.30191 2.31503L6.45323 2.19021L6.60567 2.31503L6.54615 2.11418L6.69831 1.99116H6.51134L6.45295 1.78941L6.3954 1.99116H6.20787L6.35975 2.11418L6.30191 2.31503ZM6.9271 1.78971L7.07954 1.66459L7.23226 1.78971L7.17302 1.58856L7.32462 1.46554H7.13849L7.07926 1.26349L7.02143 1.46554H6.8325L6.98606 1.58856L6.9271 1.78971ZM1.41299 5.99348L1.56571 5.86986L1.71814 5.99348L1.65919 5.79413L1.81078 5.6708L1.62354 5.6714L1.56515 5.46965L1.50788 5.6714L1.32007 5.6708L1.47194 5.79413L1.41299 5.99348ZM2.42221 5.99348L2.57465 5.86986L2.72737 5.99348L2.66813 5.79413L2.81973 5.6708L2.63276 5.6714L2.57437 5.46965L2.51682 5.6714L2.32957 5.6708L2.48117 5.79413L2.42221 5.99348ZM3.53531 5.99348L3.68775 5.86986L3.84047 5.99348L3.78123 5.79413L3.93283 5.6708L3.74446 5.6714L3.68747 5.46965L3.62964 5.6714L3.44239 5.6708L3.59426 5.79413L3.53531 5.99348ZM4.64027 5.99348L4.79271 5.86986L4.94514 5.99348L4.88703 5.79413L5.03778 5.6708L4.85026 5.6714L4.79242 5.46965L4.73459 5.6714L4.54735 5.6708L4.69894 5.79413L4.64027 5.99348ZM5.74888 5.99348L5.90159 5.86986L6.05431 5.99348L5.99592 5.79413L6.14667 5.6708L5.95942 5.6714L5.90131 5.46965L5.84376 5.6714L5.65623 5.6708L5.80783 5.79413L5.74888 5.99348ZM6.91222 5.99348L7.06466 5.86986L7.21738 5.99348L7.15814 5.79413L7.31002 5.6708L7.12165 5.6714L7.06438 5.46965L7.00655 5.6714L6.81846 5.6708L6.97118 5.79413L6.91222 5.99348ZM1.42787 2.84095L1.58059 2.71583L1.73302 2.84095L1.67378 2.6398L1.82566 2.51678L1.63814 2.51738L1.58003 2.31503L1.52219 2.51738L1.33495 2.51678L1.48738 2.6398L1.42787 2.84095ZM2.43681 2.84095L2.58953 2.71583L2.74197 2.84095L2.68301 2.6398L2.83461 2.51678L2.64736 2.51738L2.58925 2.31503L2.53142 2.51738L2.34361 2.51678L2.49605 2.6398L2.43681 2.84095ZM3.54991 2.84095L3.70235 2.71583L3.85506 2.84095L3.79583 2.6398L3.94742 2.51678L3.7613 2.51738L3.70235 2.31503L3.64424 2.51738L3.45811 2.51678L3.60886 2.6398L3.54991 2.84095ZM4.65487 2.84095L4.8073 2.71583L4.96002 2.84095L4.90107 2.6398L5.05266 2.51678L4.86457 2.51738L4.8073 2.31503L4.74947 2.51738L4.56194 2.51678L4.7141 2.6398L4.65487 2.84095ZM5.76375 2.84095L5.91647 2.71583L6.06891 2.84095L6.00996 2.6398L6.16183 2.51678L5.97402 2.51738L5.91619 2.31503L5.85836 2.51738L5.67111 2.51678L5.82271 2.6398L5.76375 2.84095ZM1.9649 3.36657L2.11734 3.24175L2.26978 3.36657L2.2111 3.16572L2.3627 3.0421H2.17517L2.11706 2.84095L2.06007 3.0421H1.87198L2.02386 3.16572L1.9649 3.36657ZM2.97413 3.36657L3.12657 3.24175L3.279 3.36657L3.22005 3.16572L3.37165 3.0421H3.18299L3.12657 2.84095L3.06846 3.0421H2.88121L3.03308 3.16572L2.97413 3.36657ZM4.08723 3.36657L4.23938 3.24175L4.39182 3.36657L4.33287 3.16572L4.48474 3.0421H4.2975L4.23938 2.84095L4.18127 3.0421H3.99375L4.14562 3.16572L4.08723 3.36657ZM5.19162 3.36657L5.34434 3.24175L5.49706 3.36657L5.43726 3.16572L5.58942 3.0421H5.40217L5.34406 2.84095L5.28651 3.0421H5.09898L5.25086 3.16572L5.19162 3.36657ZM6.30191 3.36657L6.45323 3.24175L6.60567 3.36657L6.54615 3.16572L6.69831 3.0421H6.51134L6.45295 2.84095L6.3954 3.0421H6.20787L6.35975 3.16572L6.30191 3.36657ZM6.9271 2.84095L7.07954 2.71583L7.23226 2.84095L7.17302 2.6398L7.32462 2.51678L7.13849 2.51738L7.07926 2.31503L7.02143 2.51738L6.8325 2.51678L6.98606 2.6398L6.9271 2.84095ZM1.41299 3.89219L1.56571 3.76737L1.71814 3.89219L1.65891 3.69164L1.81078 3.56832L1.62326 3.56892L1.56515 3.36657L1.50788 3.56892L1.32007 3.56832L1.47194 3.69164L1.41299 3.89219ZM2.42221 3.89219L2.57465 3.76737L2.72737 3.89219L2.66813 3.69164L2.81973 3.56832L2.63276 3.56892L2.57437 3.36657L2.51682 3.56892L2.32957 3.56832L2.48089 3.69164L2.42221 3.89219ZM3.53531 3.89219L3.68775 3.76737L3.84019 3.89219L3.78123 3.69164L3.93283 3.56832L3.74446 3.56892L3.68747 3.36657L3.62964 3.56892L3.44239 3.56832L3.59426 3.69164L3.53531 3.89219ZM4.64027 3.89219L4.79242 3.76737L4.94514 3.89219L4.88703 3.69164L5.03778 3.56832L4.85026 3.56892L4.79242 3.36657L4.73459 3.56892L4.54735 3.56832L4.69894 3.69164L4.64027 3.89219ZM5.74888 3.89219L5.90159 3.76737L6.05403 3.89219L5.99592 3.69164L6.14667 3.56832L5.95914 3.56892L5.90131 3.36657L5.84376 3.56892L5.65623 3.56832L5.80783 3.69164L5.74888 3.89219ZM1.95002 4.41781L2.10246 4.29329L2.2549 4.41781L2.19622 4.21846L2.34754 4.09454H2.16001L2.10218 3.89219L2.04463 4.09454H1.8571L2.00898 4.21846L1.95002 4.41781ZM2.95925 4.41781L3.11169 4.29329L3.26413 4.41781L3.20517 4.21846L3.35677 4.09454H3.16896L3.11141 3.89219L3.05358 4.09454H2.86605L3.01821 4.21846L2.95925 4.41781ZM4.07263 4.41781L4.22451 4.29329L4.37722 4.41781L4.31715 4.21846L4.46986 4.09454H4.28262L4.22451 3.89219L4.16668 4.09454H3.97915L4.13102 4.21846L4.07263 4.41781ZM5.17618 4.41781L5.32946 4.29329L5.48218 4.41781L5.42323 4.21846L5.57454 4.09454H5.38729L5.32918 3.89219L5.27163 4.09454H5.0841L5.23598 4.21846L5.17618 4.41781ZM6.28507 4.41781L6.43835 4.29329L6.59107 4.41781L6.53183 4.21846L6.68399 4.09454H6.49674L6.43835 3.89219L6.38052 4.09454H6.19299L6.34487 4.21846L6.28507 4.41781ZM6.91222 3.89219L7.06466 3.76737L7.2171 3.89219L7.15814 3.69164L7.31002 3.56832L7.12165 3.56892L7.06438 3.36657L7.00655 3.56892L6.81846 3.56832L6.97118 3.69164L6.91222 3.89219ZM1.41299 4.94373L1.56571 4.82011L1.71814 4.94373L1.65891 4.74288L1.81078 4.61956L1.62326 4.62016L1.56515 4.41781L1.50788 4.62016L1.32007 4.61956L1.47194 4.74288L1.41299 4.94373ZM2.42221 4.94373L2.57465 4.82011L2.72737 4.94373L2.66813 4.74288L2.81973 4.61956L2.63276 4.62016L2.57437 4.41781L2.51682 4.62016L2.32957 4.61956L2.48089 4.74288L2.42221 4.94373ZM3.53531 4.94373L3.68775 4.82011L3.84019 4.94373L3.78123 4.74288L3.93283 4.61956L3.74446 4.62016L3.68747 4.41781L3.62964 4.62016L3.44239 4.61956L3.59426 4.74288L3.53531 4.94373ZM4.64027 4.94373L4.79242 4.82011L4.94514 4.94373L4.88703 4.74288L5.03778 4.61956L4.85026 4.62016L4.79242 4.41781L4.73459 4.62016L4.54735 4.61956L4.69894 4.74288L4.64027 4.94373ZM5.74888 4.94373L5.90159 4.82011L6.05403 4.94373L5.99592 4.74288L6.14667 4.61956L5.95914 4.62016L5.90131 4.41781L5.84376 4.62016L5.65623 4.61956L5.80783 4.74288L5.74888 4.94373ZM1.95002 5.46965L2.10246 5.34453L2.2549 5.46965L2.19622 5.26851L2.34754 5.14638H2.16001L2.10218 4.94373L2.04463 5.14638H1.8571L2.00898 5.26851L1.95002 5.46965ZM2.95925 5.46965L3.11169 5.34453L3.26413 5.46965L3.20517 5.26851L3.35677 5.14638H3.16896L3.11141 4.94373L3.05358 5.14638H2.86605L3.01821 5.26851L2.95925 5.46965ZM4.07263 5.46965L4.22451 5.34453L4.37722 5.46965L4.31715 5.26851L4.46986 5.14638H4.28262L4.22451 4.94373L4.16668 5.14638H3.97915L4.13102 5.26851L4.07263 5.46965ZM5.17618 5.46965L5.32946 5.34453L5.48218 5.46965L5.42323 5.26851L5.57454 5.14638H5.38729L5.32918 4.94373L5.27163 5.14638H5.0841L5.23598 5.26851L5.17618 5.46965ZM6.28507 5.46965L6.43835 5.34453L6.59107 5.46965L6.53183 5.26851L6.68399 5.14638H6.49674L6.43835 4.94373L6.38052 5.14638H6.19299L6.34487 5.26851L6.28507 5.46965ZM6.91222 4.94373L7.06466 4.82011L7.2171 4.94373L7.15814 4.74288L7.31002 4.61956L7.12165 4.62016L7.06438 4.41781L7.00655 4.62016L6.81846 4.61956L6.97118 4.74288L6.91222 4.94373Z" fill="white" />
+                              <div className="type">
+                                <app-svg-pen-icon _nghost-ihe-c10="">
+                                  <svg _ngcontent-ihe-c10="" xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="none" >
+                                    <path _ngcontent-ihe-c10="" d="M2.808 0C.947 0 .001 1.475.001 3.293v6.585c0 1.818.947 3.292 2.807 3.292h3.368V0H2.808zm12.351 0H11.79V13.17h3.369c1.86 0 2.807-1.474 2.807-3.292V3.293c0-1.818-.947-3.292-2.807-3.292z" fill="#ec1c24">
+                                    </path>
                                   </svg>
-                                </div>
-                                <div className="flex-col justify-start items-start inline-flex">
-                                  <div className="text-[#000f49] text-xl font-semibold  leading-[30px]">USD</div>
-                                </div>
+                                </app-svg-pen-icon>
+                                <span className='text-[20px] max-[480px]:text-[16px] font-semibold'>PEN</span>
                               </div>
                             </div>
-                            <div className="w-[286.39px] flex-col justify-start items-start inline-flex">
-                              <div className="self-stretch pt-5 justify-end items-start inline-flex">
-                                <div className="self-stretch justify-start items-start flex">
-                                  <div className="self-stretch justify-start items-start flex">
-                                    <div className="self-stretchflex-col justify-start items-start inline-flex">
-                                      <div className="self-stretch h-8 pl-[206.21px] py-px flex-col justify-start items-start flex">
-                                        <div className="text-right text-[#000f49] text-xl font-semibold">
-                                          <input
-                                            type="text"
-                                            className="text-right text-[#000f49] text-xl font-semibold border-none focus:outline-none"
-                                            defaultValue="$ 262.40"
-                                            style={{ border: 'none' }}
-                                          />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                            <div className="fxFlex-80">
+                              <div className="amount-text-right">
+                                <div formcontrolname="send" mode="currency" className="p-component-envia" maxlength="15">
+                                  <span className="p-component">
+                                    <input pinputtext="" inputmode="decimal" className="input-component" id="currency-send" maxlength="15" />
+                                  </span>
                                 </div>
                               </div>
                             </div>
                           </div>
-
+                          <div className="fx-layout-4">
+                            <div className="fxFlex-20">
+                              <div className="title">Recibe</div>
+                              <div className="type">
+                                <app-svg-us-icon _nghost-ihe-c11="">
+                                  <svg _ngcontent-ihe-c11="" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path _ngcontent-ihe-c11="" d="M7.30115 2.02318V3.03491H17.9591C17.9442 2.70864 17.9122 2.29617 17.7977 2.02318" fill="#EC1C24">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M17.2952 1.01266H7.30115V2.02439H17.7977C17.6837 1.64694 17.5141 1.30271 17.2952 1.01266Z" fill="#E6E7E8">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M15.1616 0.000793457H7.30115V1.01252H17.2952C16.8266 0.386927 16.0555 0.000793457 15.1616 0.000793457Z" fill="#EC1C24">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M17.9591 3.03593H7.30115V4.04766H17.9689V3.37328C17.9689 3.31311 17.9653 3.25444 17.9636 3.19548C17.9625 3.17931 17.9608 3.13771 17.9591 3.03593Z" fill="#E6E7E8"></path><path _ngcontent-ihe-c11="" d="M7.30115 5.05938H17.9689V4.04765H7.30115V5.05938Z" fill="#EC1C24">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M7.30115 6.07025H17.9689V5.05852H7.30115V6.07025Z" fill="#E6E7E8">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M7.30115 6.07011H17.9689V7.08184H7.30115V6.07011Z" fill="#EC1C24">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M0.000488281 7.0836V8.09533H17.9673V7.0836H7.29949H0.000488281Z" fill="#E6E7E8">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M0.000488281 8.0946H17.9673V9.10633H0.000488281V8.0946Z" fill="#EC1C24">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M0.00189194 9.72855C0.00189194 9.72855 -0.000634643 9.9737 0.0061029 10.118H17.9617C17.9695 9.97011 17.9659 9.72855 17.9659 9.72855L17.9673 9.10625H0.000488281L0.00189194 9.72855Z" fill="#E6E7E8">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M2.80701 13.1701H15.1592C16.0555 13.1701 16.8006 12.8229 17.3096 12.1404H0.653809C1.17934 12.8379 1.93843 13.1701 2.80561 13.1701" fill="#EC1C24">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M0.65522 12.1414H17.311C17.533 11.8406 17.6988 11.4972 17.7994 11.1297H0.169556C0.27205 11.4961 0.43718 11.8391 0.656624 12.1414" fill="#E6E7E8">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M0.167218 11.1297H17.7971C17.889 10.8006 17.9437 10.4609 17.9599 10.118H0.00439453C0.0321869 10.464 0.0580141 10.7253 0.167218 11.1297Z" fill="#EC1C24">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M7.29949 0.000778198H2.8078C0.947393 0.000778198 0.000488281 1.47497 0.000488281 3.29339V7.08288H7.29949V0.000778198Z" fill="#176496">
+                                    </path>
+                                    <path _ngcontent-ihe-c11="" d="M0.787854 1.78969L0.940572 1.66457L1.09301 1.78969L1.03377 1.58854L1.18565 1.46552H0.998122L0.940011 1.26347L0.88218 1.46552H0.694932L0.847369 1.58854L0.787854 1.78969ZM1.7968 1.78969L1.94952 1.66457L2.10196 1.78969L2.043 1.58854L2.1946 1.46552H2.00735L1.94924 1.26347L1.89141 1.46552H1.7036L1.85604 1.58854L1.7968 1.78969ZM2.9099 1.78969L3.06234 1.66457L3.21505 1.78969L3.15582 1.58854L3.30741 1.46552H3.12129L3.06234 1.26347L3.00423 1.46552H2.8181L2.96885 1.58854L2.9099 1.78969ZM4.01486 1.78969L4.16729 1.66457L4.32001 1.78969L4.26106 1.58854L4.41265 1.46552H4.22456L4.16729 1.26347L4.10946 1.46552H3.92193L4.07409 1.58854L4.01486 1.78969ZM5.12374 1.78969L5.27646 1.66457L5.4289 1.78969L5.36995 1.58854L5.52182 1.46552H5.33401L5.27618 1.26347L5.21835 1.46552H5.0311L5.1827 1.58854L5.12374 1.78969ZM1.32489 2.31501L1.47733 2.19019L1.62977 2.31501L1.57109 2.11416L1.72269 1.99114H1.53516L1.47705 1.78939L1.42006 1.99114H1.23197L1.38385 2.11416L1.32489 2.31501ZM2.33412 2.31501L2.48656 2.19019L2.63899 2.31501L2.58004 2.11416L2.73164 1.99114H2.54298L2.48656 1.78939L2.42845 1.99114H2.2412L2.39307 2.11416L2.33412 2.31501ZM3.44722 2.31501L3.59937 2.19019L3.75181 2.31501L3.69286 2.11416L3.84473 1.99114H3.65749L3.59937 1.78939L3.54126 1.99114H3.35374L3.50561 2.11416L3.44722 2.31501ZM4.55161 2.31501L4.70433 2.19019L4.85705 2.31501L4.79725 2.11416L4.94941 1.99114H4.76216L4.70405 1.78939L4.6465 1.99114H4.45897L4.61085 2.11416L4.55161 2.31501ZM5.6619 2.31501L5.81322 2.19019L5.96566 2.31501L5.90614 2.11416L6.0583 1.99114H5.87133L5.81294 1.78939L5.75539 1.99114H5.56786L5.71974 2.11416L5.6619 2.31501ZM6.28709 1.78969L6.43953 1.66457L6.59225 1.78969L6.53301 1.58854L6.68461 1.46552H6.49848L6.43925 1.26347L6.38142 1.46552H6.19249L6.34605 1.58854L6.28709 1.78969ZM0.772976 5.99346L0.925693 5.86984L1.07813 5.99346L1.01918 5.79411L1.17077 5.67078L0.983524 5.67138L0.925132 5.46963L0.867863 5.67138L0.680054 5.67078L0.831929 5.79411L0.772976 5.99346ZM1.7822 5.99346L1.93464 5.86984L2.08736 5.99346L2.02812 5.79411L2.17972 5.67078L1.99275 5.67138L1.93436 5.46963L1.87681 5.67138L1.68956 5.67078L1.84116 5.79411L1.7822 5.99346ZM2.8953 5.99346L3.04774 5.86984L3.20046 5.99346L3.14122 5.79411L3.29282 5.67078L3.10445 5.67138L3.04746 5.46963L2.98963 5.67138L2.80238 5.67078L2.95425 5.79411L2.8953 5.99346ZM4.00026 5.99346L4.1527 5.86984L4.30513 5.99346L4.24702 5.79411L4.39777 5.67078L4.21025 5.67138L4.15241 5.46963L4.09458 5.67138L3.90734 5.67078L4.05893 5.79411L4.00026 5.99346ZM5.10887 5.99346L5.26158 5.86984L5.4143 5.99346L5.35591 5.79411L5.50666 5.67078L5.31941 5.67138L5.2613 5.46963L5.20375 5.67138L5.01622 5.67078L5.16782 5.79411L5.10887 5.99346ZM6.27221 5.99346L6.42465 5.86984L6.57737 5.99346L6.51813 5.79411L6.67001 5.67078L6.48164 5.67138L6.42437 5.46963L6.36654 5.67138L6.17845 5.67078L6.33117 5.79411L6.27221 5.99346ZM0.787854 2.84093L0.940572 2.71581L1.09301 2.84093L1.03377 2.63978L1.18565 2.51676L0.998122 2.51736L0.940011 2.31501L0.88218 2.51736L0.694932 2.51676L0.847369 2.63978L0.787854 2.84093ZM1.7968 2.84093L1.94952 2.71581L2.10196 2.84093L2.043 2.63978L2.1946 2.51676L2.00735 2.51736L1.94924 2.31501L1.89141 2.51736L1.7036 2.51676L1.85604 2.63978L1.7968 2.84093ZM2.9099 2.84093L3.06234 2.71581L3.21505 2.84093L3.15582 2.63978L3.30741 2.51676L3.12129 2.51736L3.06234 2.31501L3.00423 2.51736L2.8181 2.51676L2.96885 2.63978L2.9099 2.84093ZM4.01486 2.84093L4.16729 2.71581L4.32001 2.84093L4.26106 2.63978L4.41265 2.51676L4.22456 2.51736L4.16729 2.31501L4.10946 2.51736L3.92193 2.51676L4.07409 2.63978L4.01486 2.84093ZM5.12374 2.84093L5.27646 2.71581L5.4289 2.84093L5.36995 2.63978L5.52182 2.51676L5.33401 2.51736L5.27618 2.31501L5.21835 2.51736L5.0311 2.51676L5.1827 2.63978L5.12374 2.84093ZM1.32489 3.36655L1.47733 3.24173L1.62977 3.36655L1.57109 3.1657L1.72269 3.04208H1.53516L1.47705 2.84093L1.42006 3.04208H1.23197L1.38385 3.1657L1.32489 3.36655ZM2.33412 3.36655L2.48656 3.24173L2.63899 3.36655L2.58004 3.1657L2.73164 3.04208H2.54298L2.48656 2.84093L2.42845 3.04208H2.2412L2.39307 3.1657L2.33412 3.36655ZM3.44722 3.36655L3.59937 3.24173L3.75181 3.36655L3.69286 3.1657L3.84473 3.04208H3.65749L3.59937 2.84093L3.54126 3.04208H3.35374L3.50561 3.1657L3.44722 3.36655ZM4.55161 3.36655L4.70433 3.24173L4.85705 3.36655L4.79725 3.1657L4.94941 3.04208H4.76216L4.70405 2.84093L4.6465 3.04208H4.45897L4.61085 3.1657L4.55161 3.36655ZM5.6619 3.36655L5.81322 3.24173L5.96566 3.36655L5.90614 3.1657L6.0583 3.04208H5.87133L5.81294 2.84093L5.75539 3.04208H5.56786L5.71974 3.1657L5.6619 3.36655ZM6.28709 2.84093L6.43953 2.71581L6.59225 2.84093L6.53301 2.63978L6.68461 2.51676L6.49848 2.51736L6.43925 2.31501L6.38142 2.51736L6.19249 2.51676L6.34605 2.63978L6.28709 2.84093ZM0.772976 3.89217L0.925693 3.76735L1.07813 3.89217L1.0189 3.69162L1.17077 3.5683L0.983243 3.5689L0.925132 3.36655L0.867863 3.5689L0.680054 3.5683L0.831929 3.69162L0.772976 3.89217ZM1.7822 3.89217L1.93464 3.76735L2.08736 3.89217L2.02812 3.69162L2.17972 3.5683L1.99275 3.5689L1.93436 3.36655L1.87681 3.5689L1.68956 3.5683L1.84088 3.69162L1.7822 3.89217ZM2.8953 3.89217L3.04774 3.76735L3.20018 3.89217L3.14122 3.69162L3.29282 3.5683L3.10445 3.5689L3.04746 3.36655L2.98963 3.5689L2.80238 3.5683L2.95425 3.69162L2.8953 3.89217ZM4.00026 3.89217L4.15241 3.76735L4.30513 3.89217L4.24702 3.69162L4.39777 3.5683L4.21025 3.5689L4.15241 3.36655L4.09458 3.5689L3.90734 3.5683L4.05893 3.69162L4.00026 3.89217ZM5.10887 3.89217L5.26158 3.76735L5.41402 3.89217L5.35591 3.69162L5.50666 3.5683L5.31913 3.5689L5.2613 3.36655L5.20375 3.5689L5.01622 3.5683L5.16782 3.69162L5.10887 3.89217ZM1.31001 4.41779L1.46245 4.29327L1.61489 4.41779L1.55621 4.21844L1.70753 4.09452H1.52L1.46217 3.89217L1.40462 4.09452H1.21709L1.36897 4.21844L1.31001 4.41779ZM2.31924 4.41779L2.47168 4.29327L2.62412 4.41779L2.56516 4.21844L2.71676 4.09452H2.52895L2.4714 3.89217L2.41357 4.09452H2.22604L2.3782 4.21844L2.31924 4.41779ZM3.43262 4.41779L3.5845 4.29327L3.73721 4.41779L3.67714 4.21844L3.82985 4.09452H3.64261L3.5845 3.89217L3.52667 4.09452H3.33914L3.49101 4.21844L3.43262 4.41779ZM4.53617 4.41779L4.68945 4.29327L4.84217 4.41779L4.78322 4.21844L4.93453 4.09452H4.74728L4.68917 3.89217L4.63162 4.09452H4.44409L4.59597 4.21844L4.53617 4.41779ZM5.64506 4.41779L5.79834 4.29327L5.95106 4.41779L5.89182 4.21844L6.04398 4.09452H5.85673L5.79834 3.89217L5.74051 4.09452H5.55298L5.70486 4.21844L5.64506 4.41779ZM6.27221 3.89217L6.42465 3.76735L6.57709 3.89217L6.51813 3.69162L6.67001 3.5683L6.48164 3.5689L6.42437 3.36655L6.36654 3.5689L6.17845 3.5683L6.33117 3.69162L6.27221 3.89217ZM0.772976 4.94371L0.925693 4.82009L1.07813 4.94371L1.0189 4.74286L1.17077 4.61954L0.983243 4.62014L0.925132 4.41779L0.867863 4.62014L0.680054 4.61954L0.831929 4.74286L0.772976 4.94371ZM1.7822 4.94371L1.93464 4.82009L2.08736 4.94371L2.02812 4.74286L2.17972 4.61954L1.99275 4.62014L1.93436 4.41779L1.87681 4.62014L1.68956 4.61954L1.84088 4.74286L1.7822 4.94371ZM2.8953 4.94371L3.04774 4.82009L3.20018 4.94371L3.14122 4.74286L3.29282 4.61954L3.10445 4.62014L3.04746 4.41779L2.98963 4.62014L2.80238 4.61954L2.95425 4.74286L2.8953 4.94371ZM4.00026 4.94371L4.15241 4.82009L4.30513 4.94371L4.24702 4.74286L4.39777 4.61954L4.21025 4.62014L4.15241 4.41779L4.09458 4.62014L3.90734 4.61954L4.05893 4.74286L4.00026 4.94371ZM5.10887 4.94371L5.26158 4.82009L5.41402 4.94371L5.35591 4.74286L5.50666 4.61954L5.31913 4.62014L5.2613 4.41779L5.20375 4.62014L5.01622 4.61954L5.16782 4.74286L5.10887 4.94371ZM1.31001 5.46963L1.46245 5.34451L1.61489 5.46963L1.55621 5.26849L1.70753 5.14636H1.52L1.46217 4.94371L1.40462 5.14636H1.21709L1.36897 5.26849L1.31001 5.46963ZM2.31924 5.46963L2.47168 5.34451L2.62412 5.46963L2.56516 5.26849L2.71676 5.14636H2.52895L2.4714 4.94371L2.41357 5.14636H2.22604L2.3782 5.26849L2.31924 5.46963ZM3.43262 5.46963L3.5845 5.34451L3.73721 5.46963L3.67714 5.26849L3.82985 5.14636H3.64261L3.5845 4.94371L3.52667 5.14636H3.33914L3.49101 5.26849L3.43262 5.46963ZM4.53617 5.46963L4.68945 5.34451L4.84217 5.46963L4.78322 5.26849L4.93453 5.14636H4.74728L4.68917 4.94371L4.63162 5.14636H4.44409L4.59597 5.26849L4.53617 5.46963ZM5.64506 5.46963L5.79834 5.34451L5.95106 5.46963L5.89182 5.26849L6.04398 5.14636H5.85673L5.79834 4.94371L5.74051 5.14636H5.55298L5.70486 5.26849L5.64506 5.46963ZM6.27221 4.94371L6.42465 4.82009L6.57709 4.94371L6.51813 4.74286L6.67001 4.61954L6.48164 4.62014L6.42437 4.41779L6.36654 4.62014L6.17845 4.61954L6.33117 4.74286L6.27221 4.94371Z" fill="white">
+                                    </path>
+                                  </svg>
+                                </app-svg-us-icon>
+                                <span className='text-[20px] max-[480px]:text-[16px] font-semibold'>USD</span>
+                              </div>
+                            </div>
+                            <div className="fxFlex-80">
+                              <div className="amount-text-right">
+                                <div formcontrolname="take" mode="currency" className="p-component-recibe" maxlength="13">
+                                  <span className="p-component">
+                                    <input pinputtext="" inputmode="decimal" className="input-component" id="currency-take" maxlength="13" />
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div className=" font-bold have-coupon">Usar un cupón o código</div>
-                        <div className="fx-layout-wc-row-average-savings">
-                          <div className="left-[81.56px] top-[3.50px]  flex-col justify-start items-start inline-flex">
-                            <div className="text-[#000f49] text-sm font-semibold  leading-[21px]">Ahorro promedio*</div>
-                          </div>
-                          <div className="left-[215.31px] top-[3px]  flex-col justify-start items-start inline-flex">
-                            <div className="w-6 h-[19px] relative">
-                              <div className="w-[22.21px] h-[18.73px] left-[0.89px] top-[0.14px] ">
-                                <div className="w-[20.15px] h-[16.95px] left-[0.78px] top-[0.89px] ">
-                                  <svg _ngcontent-hvw-c9="" width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"><g _ngcontent-hvw-c9="" id="AHORRO ICONO" clip-path="url(#clip0_748_1177)"><g _ngcontent-hvw-c9="" id="Capa 2"><path _ngcontent-hvw-c9="" id="Vector" d="M15.9225 17.7753L14.8656 17.9693C14.5737 18.0123 14.2819 17.6797 14.2118 17.2227L14.0466 16.182C13.3175 16.3295 12.5756 16.4053 11.8317 16.4083C10.784 16.4026 9.74227 16.2503 8.73678 15.9558L8.55127 17.2205C8.48339 17.6729 8.19381 18.0146 7.90196 17.9716L5.89296 17.6752C5.60111 17.6322 5.42012 17.2227 5.48799 16.7702L5.79568 14.6753L5.81604 14.5622C4.11246 13.3405 3.04688 11.6052 3.04688 9.67992C3.0483 9.04582 3.16482 8.41725 3.39076 7.82477L3.47447 7.6121C4.60566 4.91986 7.92458 2.97195 11.8317 2.97195C12.5361 2.97156 13.2389 3.03669 13.9312 3.16651C14.4787 2.50363 15.5375 1.41543 16.8497 1.03082C16.8823 1.02225 16.9167 1.02263 16.9491 1.03191C16.9815 1.04119 17.0109 1.05904 17.034 1.08358C17.0571 1.10812 17.0733 1.13844 17.0806 1.17135C17.088 1.20427 17.0864 1.23856 17.0759 1.27063C16.7653 2.15606 16.5854 3.08208 16.542 4.01943C18.3972 4.92439 19.7795 6.3429 20.3383 8.01481H21.1437C21.3237 8.01481 21.4964 8.08631 21.6236 8.2136C21.7509 8.34088 21.8224 8.51352 21.8224 8.69352V11.2885C21.8224 11.4685 21.7509 11.6411 21.6236 11.7684C21.4964 11.8957 21.3237 11.9672 21.1437 11.9672H20.0894C19.9078 12.3246 19.6977 12.6646 19.462 12.9844" stroke="#000F49" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path _ngcontent-hvw-c9="" id="Vector_2" d="M1.93382 6.3611C1.6759 4.80232 2.86818 4.41771 2.89759 4.3702C2.92701 4.32269 2.88402 4.15527 2.8252 4.15527C2.81162 4.15527 1.42026 4.64621 1.7121 6.3973C1.86595 7.32035 2.66231 7.68686 3.3908 7.82487C3.41794 7.75473 3.44509 7.68233 3.4745 7.6122C2.80484 7.49456 2.06956 7.17556 1.93382 6.3611Z" fill="#000F49" stroke="#000F49" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path><path _ngcontent-hvw-c9="" id="Vector_3" d="M16.875 9.27614C17.4316 9.27614 17.8828 8.82492 17.8828 8.26832C17.8828 7.71172 17.4316 7.2605 16.875 7.2605C16.3184 7.2605 15.8672 7.71172 15.8672 8.26832C15.8672 8.82492 16.3184 9.27614 16.875 9.27614Z" fill="#000F49"></path></g><path _ngcontent-hvw-c9="" id="Vector_4" d="M17.6719 17.1437C18.5198 17.1437 19.2071 16.4563 19.2071 15.6085C19.2071 14.7606 18.5198 14.0732 17.6719 14.0732C16.8241 14.0732 16.1367 14.7606 16.1367 15.6085C16.1367 16.4563 16.8241 17.1437 17.6719 17.1437Z" fill="#FF6E00"></path></g><defs _ngcontent-hvw-c9=""><clipPath _ngcontent-hvw-c9="" id="clip0_748_1177"><rect _ngcontent-hvw-c9="" width="22.2124" height="18.7281" fill="white" transform="translate(0.894531 0.135986)"></rect></clipPath></defs></svg>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="left-[249.31px] top-[3.50px]  flex-col justify-start items-start inline-flex">
-                            <div className="text-[#000f49] text-sm font-semibold  leading-[21px]">S/ 30.83</div>
-                          </div>
+                        <a className="have-coupon"> Usar un cupón o código </a>
+                        <div className="fx-layout-5">
+                          <strong className='text-[14px] font-semibold max-[480px]:text-[12px]'>Ahorro promedio* </strong>
+                          <app-svg-pig-icon _nghost-ihe-c9="">
+                            <svg _ngcontent-ihe-c9="" width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g _ngcontent-ihe-c9="" id="AHORRO ICONO" clip-path="url(#clip0_748_1177)">
+                                <g _ngcontent-ihe-c9="" id="Capa 2">
+                                  <path _ngcontent-ihe-c9="" id="Vector" d="M15.9225 17.7753L14.8656 17.9693C14.5737 18.0123 14.2819 17.6797 14.2118 17.2227L14.0466 16.182C13.3175 16.3295 12.5756 16.4053 11.8317 16.4083C10.784 16.4026 9.74227 16.2503 8.73678 15.9558L8.55127 17.2205C8.48339 17.6729 8.19381 18.0146 7.90196 17.9716L5.89296 17.6752C5.60111 17.6322 5.42012 17.2227 5.48799 16.7702L5.79568 14.6753L5.81604 14.5622C4.11246 13.3405 3.04688 11.6052 3.04688 9.67992C3.0483 9.04582 3.16482 8.41725 3.39076 7.82477L3.47447 7.6121C4.60566 4.91986 7.92458 2.97195 11.8317 2.97195C12.5361 2.97156 13.2389 3.03669 13.9312 3.16651C14.4787 2.50363 15.5375 1.41543 16.8497 1.03082C16.8823 1.02225 16.9167 1.02263 16.9491 1.03191C16.9815 1.04119 17.0109 1.05904 17.034 1.08358C17.0571 1.10812 17.0733 1.13844 17.0806 1.17135C17.088 1.20427 17.0864 1.23856 17.0759 1.27063C16.7653 2.15606 16.5854 3.08208 16.542 4.01943C18.3972 4.92439 19.7795 6.3429 20.3383 8.01481H21.1437C21.3237 8.01481 21.4964 8.08631 21.6236 8.2136C21.7509 8.34088 21.8224 8.51352 21.8224 8.69352V11.2885C21.8224 11.4685 21.7509 11.6411 21.6236 11.7684C21.4964 11.8957 21.3237 11.9672 21.1437 11.9672H20.0894C19.9078 12.3246 19.6977 12.6646 19.462 12.9844" stroke="#061756" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                  </path>
+                                  <path _ngcontent-ihe-c9="" id="Vector_2" d="M1.93382 6.3611C1.6759 4.80232 2.86818 4.41771 2.89759 4.3702C2.92701 4.32269 2.88402 4.15527 2.8252 4.15527C2.81162 4.15527 1.42026 4.64621 1.7121 6.3973C1.86595 7.32035 2.66231 7.68686 3.3908 7.82487C3.41794 7.75473 3.44509 7.68233 3.4745 7.6122C2.80484 7.49456 2.06956 7.17556 1.93382 6.3611Z" fill="#061756" stroke="#061756" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round">
+                                  </path>
+                                  <path _ngcontent-ihe-c9="" id="Vector_3" d="M16.875 9.27614C17.4316 9.27614 17.8828 8.82492 17.8828 8.26832C17.8828 7.71172 17.4316 7.2605 16.875 7.2605C16.3184 7.2605 15.8672 7.71172 15.8672 8.26832C15.8672 8.82492 16.3184 9.27614 16.875 9.27614Z" fill="#061756">
+                                  </path>
+                                </g>
+                                <path _ngcontent-ihe-c9="" id="Vector_4" d="M17.6719 17.1437C18.5198 17.1437 19.2071 16.4563 19.2071 15.6085C19.2071 14.7606 18.5198 14.0732 17.6719 14.0732C16.8241 14.0732 16.1367 14.7606 16.1367 15.6085C16.1367 16.4563 16.8241 17.1437 17.6719 17.1437Z" fill="#FF6E00">
+                                </path>
+                              </g>
+                              <defs _ngcontent-ihe-c9="">
+                                <clipPath _ngcontent-ihe-c9="" id="clip0_748_1177">
+                                  <rect _ngcontent-ihe-c9="" width="22.2124" height="18.7281" fill="white" transform="translate(0.894531 0.135986)">
+                                  </rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </app-svg-pig-icon>
+                          <strong className='text-[14px] font-semibold max-[480px]:text-[12px]'>S/ 27.45</strong>
                         </div>
-                        <button className="fx-layout-quote-btn ">
-                          <strong>
-                            Ingresar a Rextie
-                          </strong>
+                        <button type="button" className="fx-layout-6">
+                          <strong>Ingresar a Rextie</strong>
                         </button>
-
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-                <div className="px-3 pt-2 flex-col justify-start items-start flex">
-                  <div className="flex-col justify-start items-center flex">
-                    <div className="text-center text-[#000f49] text-[10px] font-[400]  leading-[15px]">(*)Cálculo respecto al tipo de cambio publicado por entidades bancarias.</div>
-                  </div>
-                </div>
+                <span className="font-[400] text-[#061756] text-[10px] mt-2 mx-3 text-center">(*)Cálculo respecto al tipo de cambio publicado por entidades bancarias.
+                </span>
               </div>
             </div>
           </div>
@@ -321,17 +310,17 @@ export default function Home() {
 
       {/* 2da seccion */}
       <div className="app-bank">
-        <h1 className="font-bold text-[32px] max-[480px]:text-xl leading-[48px] text-[#000F49] text-center px-11 max-[480px]:px-6 mt-12 mb-3 min-[480px]:mb-6">
+        <h1 className="font-bold text-[32px] max-[480px]:text-xl leading-[48px] text-[#061756] text-center px-11 max-[480px]:px-6 mt-12 mb-3 min-[480px]:mb-6">
           Cambia al instante con todos los bancos en Perú
         </h1>
         <div className='grid grid-cols-1 min-[769px]:grid-cols-2 gap-3 min-[413px]:gap-6  mb-[60px] max-w-[320px] min-[413px]:max-w-[546px] min-[769px]:max-w-[960px] m-auto'>
           <div className='order-2 min-[769px]:order-1 flex flex-col items-center justify-center border border-quinary-gray border-solid rounded-3xl h-[162px] sm:h-52 p-6 min-[769px]:mt-[24.8px]'>
             <div className='flex flex-col-reverse mb-6 sm:mb-0 sm:flex-col items-center'>
-              <span className="hidden min-[480px]:block font-normal text-xs leading-4 text-[#000F49] min-[480px]:mb-6">Transferencias inmediatas </span>
-              <span className="block min-[480px]:hidden font-normal text-xs leading-4 text-[#000F49] min-[480px]:mb-6">Transferencias Inmediatas a todo el Perú. </span>
-              <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#000F49]">15 min. </span>
-              <span className="hidden min-[480px]:block font-normal text-xs leading-4 text-[#000F49] mb-6">Todo el Perú
-                <span className="block min-[480px]:hidden font-normal text-xs leading-4 text-[#000F49] min-[480px]:mb-6">Transferencias Inmediatas a todo el Perú.
+              <span className="hidden min-[480px]:block font-normal text-xs leading-4 text-[#061756] min-[480px]:mb-6">Transferencias inmediatas </span>
+              <span className="block min-[480px]:hidden font-normal text-xs leading-4 text-[#061756] min-[480px]:mb-6">Transferencias Inmediatas a todo el Perú. </span>
+              <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#061756]">15 min. </span>
+              <span className="hidden min-[480px]:block font-normal text-xs leading-4 text-[#061756] mb-6">Todo el Perú
+                <span className="block min-[480px]:hidden font-normal text-xs leading-4 text-[#061756] min-[480px]:mb-6">Transferencias Inmediatas a todo el Perú.
                 </span>
               </span>
               <div className="flex flex-col sm:flex-row items-center sm:justify-center sm:gap-8 sm:mb-[30px]">
@@ -353,14 +342,14 @@ export default function Home() {
               <span className="text-sixth-white text-xs max-[480px]:text-[10px] font-normal text-white">Nuevo beneficio</span>
             </div>
             <div className="flex flex-col items-center justify-center border border-quinary-gray border-solid rounded-b-3xl rounded-t-none sm:h-52 h-[278px] p-6">
-              <span className="font-normal text-xs leading-4 text-[#000F49] mb-6 max-[480px]:mb-2">Transferencias interbancarias</span>
+              <span className="font-normal text-xs leading-4 text-[#061756] mb-6 max-[480px]:mb-2">Transferencias interbancarias</span>
               <div className="flex flex-col sm:flex-row sm:gap-6 mb-6">
                 <div className="flex flex-col items-center">
-                  <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#000F49]">30 min.</span>
+                  <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#061756]">30 min.</span>
                   <span className="font-normal text-xs leading-4 text-[#707E9B]">Lima </span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#000F49]">24 horas</span>
+                  <span className="font-bold text-2xl max-[480px]:text-base leading-8 text-[#061756]">24 horas</span>
                   <span className="font-normal text-xs leading-4 text-[#707E9B]">Provincias </span>
                 </div>
               </div>
