@@ -28,18 +28,19 @@ export default function Home() {
       <div className="bg-[url('/banner-mobile.png')] min-[480px]:bg-[url('/banner-person.webp')] bg-no-repeat bg-cover bg-center h-auto min-[1281px]:h-[682px] image-container">
         <div className='relative flex-col justify-items-center'>
           {/* Header */}
+
+          <div className="w-full left-0 top-0 h-10 hidden min-[1025px]:block ng-star-inserted">
+            <ul className="max-w-7xl max-[1919px]:max-w-[75rem] mx-auto px-2.5 py-1.5 flex gap-[30px] list-none ng-star-inserted">
+              <li>
+                <a href="#" className="text-white border-b-[3px] border-[#ff6e00] font-bold pb-0.4">Personas</a>
+              </li>
+              <li>
+                <a href="#" className="text-white">Empresas</a>
+              </li>
+            </ul>
+          </div>
           <header className="font-size-14 z-[100] h-82 w-full left-0 top-0 md:top-10 ng-star-inserted">
-            <div className="w-full left-0 top-0 h-10 hidden min-[1025px]:block ng-star-inserted">
-              <ul className="max-w-7xl max-[1919px]:max-w-[75rem] mx-auto px-2.5 py-1.5 flex gap-[30px] list-none ng-star-inserted">
-                <li>
-                  <a href="#" className="text-white border-b-[3px] border-[#ff6e00] font-bold pb-0.4">Personas</a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">Empresas</a>
-                </li>
-              </ul>
-            </div>
-            <nav className="min-w-96:w-96 max-[1919px]:max-w-[75rem] mx-auto flex items-center justify-between h-[82px] px-2.5 ng-star-inserted">
+            <nav className="max-w-7xl max-[1919px]:max-w-[75rem] mx-auto flex items-center justify-between h-[82px] px-2.5 ng-star-inserted">
               <img src="/rextie-icon-redesign.svg" alt="Rextie Logo" className="object-cover object-left-top hidden min-[480px]:block ng-star-inserted" />
               <img _ngcontent-yqd-c63="" src="/isotipo-rextie.svg" alt="Rextie: La Casa de cambio online líder del Perú" className="object-cover object-left-top flex min-[480px]:hidden ng-star-inserted" />
 
@@ -79,7 +80,6 @@ export default function Home() {
                   </div>
                 </button>
               </div>
-
             </nav>
           </header>
 
