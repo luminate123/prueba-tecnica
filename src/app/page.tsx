@@ -208,7 +208,7 @@ export default function Home() {
                               <div className="amount-text-right xs:text-blue-500">
                                 <div className="p-component-envia">
                                   <span className="p-component">
-                                    <input inputMode="decimal" className="input-component" id="currency-send" />
+                                    <input inputMode="decimal" className="text-[20px] max-[480px]:text-[16px] font-semibold input-component" id="currency-send" />
                                   </span>
                                 </div>
                               </div>
@@ -257,7 +257,7 @@ export default function Home() {
                               <div className="amount-text-right">
                                 <div className="p-component-recibe" >
                                   <span className="p-component">
-                                    <input className="input-component" id="currency-take" />
+                                    <input className="text-[20px] max-[480px]:text-[16px] font-semibold input-component" id="currency-take" />
                                   </span>
                                 </div>
                               </div>
