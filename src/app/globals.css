@@ -10421,7 +10421,6 @@ button {
   transform: translateZ(0);
   backface-visibility: hidden;
   text-align: initial;
-  justify-items: center;
   width: full;
 }
 
@@ -17910,7 +17909,6 @@ button {
   align-items: center;
   background-color: var(--cuaternary-lightblue);
   border-radius: 6.4px;
-  width: 40% !important;
   height: 204px;
   margin-right: 15px;
 }
@@ -18088,7 +18086,6 @@ button {
   align-items: center;
   background-color: var(--cuaternary-lightblue);
   border-radius: 6.4px;
-  width: 40% !important;
   height: 204px;
   margin-right: 15px;
 }
@@ -18266,7 +18263,6 @@ button {
   align-items: center;
   background-color: var(--cuaternary-lightblue);
   border-radius: 6.4px;
-  width: 40% !important;
   height: 204px;
   margin-right: 15px;
 }
